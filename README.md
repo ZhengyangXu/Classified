@@ -6,7 +6,7 @@
 
 #### Ladder 2 --Binary Search
 
-1. Last Position of target
+1. [Last Position of target](Binary_Search/L2.1_Last_Position_of_Target.py)
 2. Search Insert position
 3. Search a 2D Matrix
 4. First Position Of target
