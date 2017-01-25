@@ -31,7 +31,6 @@ class TreeNode:
         self.left, self.right = None, None
 """
 
-
 class Solution:
     """
     @param root: The root of binary tree.
@@ -39,4 +38,23 @@ class Solution:
     """
     def levelOrder(self, root):
         # write your code here
-        pass
+        if root ==None:
+            return []
+        q = []
+        q.insert(0, root)
+        result = []
+        while len(q) > 0:
+            size = len(q)
+            level = []
+            while size > 0:
+                node = q.pop()
+                level.append(node.val)
+                if node.left:
+                    q.insert(0,node.left)
+                if node.right:
+                    q.insert(0,node.right)
+                size -= 1
+
+            result.append(level)
+
+        return result

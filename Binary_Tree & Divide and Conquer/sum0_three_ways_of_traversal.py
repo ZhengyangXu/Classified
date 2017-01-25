@@ -86,3 +86,62 @@ Iterative Bitches
 """
 
 # Inorder Iterative
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Inorder in ArrayList which contains node values.
+    """
+    def inorderTraversal(self, root):
+        # write your code here
+        if root == None:
+            return []
+        stack = []
+        res = []
+        cur = root
+        while cur is not None or len(stack) > 0:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            node = cur
+            cur = cur.right
+            res.append(node.val)
+        return res
+
+# Preorder Iterative
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Preorder in ArrayList which contains node values.
+    """
+    def preorderTraversal(self, root):
+        def traverse(root, result):
+            if root is None:
+                return
+            result.append(root.val)
+            traverse(root.left, result)
+            traverse(root.right, result)
+        result = []
+        traverse(root, result)
+        return result
+
+# Post order
+    def postorderTraversal(self, root):
+        if root is None:
+            return []
+        stack = []
+        res = []
+        stack.append(root)
+        while stack:
+            cur = stack.pop()
+            res.append(cur.val)
+            if cur.left:
+                stack.append(cur.left)
+            if cur.right:
+                stack.append(cur.right)
+
+        output = []
+        while res:
+            output.append(res.pop())
+        return output
