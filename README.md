@@ -35,7 +35,7 @@
 15. [Flatten_Binary_Tree_to_linked_list](Binary_Tree & Divide and Conquer/3.15_453_Flatten_Binary_Tree_to_linked_list.py)
 16. [Maximum_Depth_of_Binary_Tree](Binary_Tree & Divide and Conquer/3.16_97_Maximum_Depth_of_Binary_Tree.py	)
 17. [Balanced_Binary_Tree](Binary_Tree & Divide and Conquer/3.17_Balanced_Binary_Tree.py	)
-18. *[7/18/19 Three LCA Problems]*((Binary_Tree & Divide and Conquer/LCA/)
+18. *[7/18/19 Three LCA Problems]*(Binary_Tree & Divide and Conquer/LCA/)
 
 
 
