@@ -17,3 +17,6 @@
 9. [First Bad version](Binary_Search/2.9_First_Bad_Version.py)
 10. [Search in Rotated Sorted ArrayReader](Binary_Search/2.10_Search_In_Rotated_Sorted_Array.py)
 11. [Search for a Range](Binary_Search/2.11_Search_For_A_Range.py)
+
+#### Ladder 3 --Divide&Conquer and Binary Tree
+1. [Maximum_Depth_Binary_Tree](Binary_Tree & Divide and Conquer/3.1_Maximum_Depth_of_Binary_Tree.py)
