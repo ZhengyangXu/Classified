@@ -2,7 +2,7 @@
 
 #### Ladder 1 -- Coding Style
 
-1. (strStr)[Binary_Search/1.1_strStr.py]
+1. [strStr](Binary_Search/1.1_strStr.py)
 
 #### Ladder 2 --Binary Search
 
