@@ -15,18 +15,23 @@ If source = "source" and target = "target", return -1.
 If source = "abcdabcdefg" and target = "bcd", return 1.
 """
 
+
 class Solution:
+
     def strStr(self, source, target):
         # write your code here
-        if source == None or target == None:
+        if target is None:
             return -1
         if len(target) == 0:
             return 0
-        if len(source) == 0:
+        if source is None or len(source) == 0:
             return -1
-        for i, s_i in enumerate(source[:len(source)-len(target)+1]):
-            for j, s_j in enumerate(target):
-                if target[j] == source[i+j] and j == len(target)-1:
+
+        for i in xrange(len(source) - len(target) + 1):
+            for j in xrange(len(target)):
+                if source[i + j] != target[j]:
+                    break
+                elif source[i + j] == target[j] and j == len(target) - 1:
                     return i
+
         return -1
-            

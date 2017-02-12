@@ -11,38 +11,36 @@ For [4, 5, 1, 2, 3] and target=1, return 2.
 For [4, 5, 1, 2, 3] and target=0, return -1.
 """
 
+
 class Solution:
     """
     @param A : a list of integers
     @param target : an integer to be searched
     @return : an integer
     """
-    def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-        if nums == None or len(nums) == 0:
+
+    def search(self, A, target):
+        # write your code here
+        if A is None or len(A) == 0 or target is None:
             return -1
-        start = 0
-        end = len(nums) - 1
-        while start + 1 <end:
-            mid = start + (end-start)/2
-            if (nums[mid] == target):
+        start, end = 0, len(A) - 1
+
+        while start + 1 < end:
+            mid = start + (end - start) / 2
+            if A[mid] == target:
                 return mid
-            if ( nums[start] < nums[mid]):
-                if nums[start] <= target and target <= nums[mid]:
-                    end = mid
-                else:
+            elif A[mid] < A[end]:
+                if target >= A[mid] and target <= A[end]:
                     start = mid
+                else:
+                    end = mid
             else:
-                if nums[mid] <= target and target <= nums[end]:
-                    start = mid
-                else:
+                if target >= A[start] and target <= A[mid]:
                     end = mid
-        if nums[start] == target:
+                else:
+                    start = mid
+        if A[start] == target:
             return start
-        if nums[end] == target:
+        if A[end] == target:
             return end
         return -1

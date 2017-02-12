@@ -25,6 +25,13 @@ Due to the constraint, this is can be flattened to a 1D sequence with equation
 col*x + y = a
 x = a/col
 y = a%col
+
+
+2 binary search is to
+
+search column wise find last position <= targret
+
+then search rowwise first postion == target 
 """
 
 

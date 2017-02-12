@@ -8,7 +8,6 @@ Return -1, if the number doesn't exist in the array.
 """
 
 
-
 """
 Definition of ArrayReader:
 class ArrayReader:
@@ -25,18 +24,21 @@ class ArrayReader:
         # this would return the number on the given index
         # return -1 if index is less than zero.
 """
+
+
 class Solution:
     # @param {ArrayReader} reader: An instance of ArrayReader
     # @param {int} target an integer
     # @return {int} an integer
+
     def searchBigSortedArray(self, reader, target):
         # write your code here
         start, end = 0, 0
         while target > reader.get(end):
-            end = end*2 + 1
+            end = end * 2 + 1
 
         while start + 1 < end:
-            mid = start + (end - start)/2
+            mid = start + (end - start) / 2
             mid_value = reader.get(mid)
             if mid_value == target:
                 end = mid
@@ -45,10 +47,9 @@ class Solution:
             else:
                 start = mid
 
-        if reader.get(start)==target:
+        if reader.get(start) == target:
             return start
-        elif reader.get(end)==target:
+        elif reader.get(end) == target:
             return end
         else:
             return -1
-            

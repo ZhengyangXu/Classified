@@ -2,8 +2,11 @@
 Description
 ___________
 Given n books and the ith book has A[i] pages. You are given k people to copy the n books.
-n books list in a row and each person can claim a continous range of the n books. For example one copier can copy the books from ith to jth continously, but he can not copy the 1st book, 2nd book and 4th book (without 3rd book).
-They start copying books at the same time and they all cost 1 minute to copy 1 page of a book. What's the best strategy to assign books so that the slowest copier can finish at earliest time?
+n books list in a row and each person can claim a continous range of the n books.
+For example one copier can copy the books from ith to jth continously,
+but he can not copy the 1st book, 2nd book and 4th book (without 3rd book).
+They start copying books at the same time and they all cost 1 minute to copy 1 page of a book.
+ What's the best strategy to assign books so that the slowest copier can finish at earliest time?
 
 Example
 Given array A = [3,2,4], k = 2.
@@ -26,10 +29,10 @@ class Solution:
     # #     write your code here
 
     # #     DP approach + Prefix Sum
-    #     prefix_sum = []
-    #     prefix_sum.append(pages[0])
-    #     for i in xrange(1,len(pages)):
-    #         prefix_sum.append(prefix_sum[i-1] + pages[i])
+        # prefix_sum = []
+        # prefix_sum.append(pages[0])
+        # for i in xrange(1,len(pages)):
+        #     prefix_sum.append(prefix_sum[i-1] + pages[i])
     #     m = len(pages)
     #     dic = [[0 for _ in xrange(k)] for _ in xrange(m)]
     #     # print prefix_sum
@@ -52,7 +55,7 @@ class Solution:
 
 #-----------------------------------------------------------------------
         # Binary Search
-        # Constraint rquired requireCopiers = k
+        # Constraint rquired requireCopiers <= k
         # Find first position of range ( max (pages), sum(pages) )
 
         start = max(pages)
@@ -60,9 +63,7 @@ class Solution:
         while start + 1 < end:
             mid = start + (end - start) / 2
             copiers = self.getRequiredCopiers(pages, mid)
-            if copiers == k:
-                end = mid
-            elif copiers < k:
+            if copiers <= k:
                 end = mid
             else:
                 start = mid
