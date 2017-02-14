@@ -22,6 +22,8 @@ at a root 3 situations
 3. maxpath must combine left and right passing through root
 
 SO we keep track of two variables and use DQ
+# This is important
+# means we do extra max with 0 at new_max 
 1. maxRoot starts from root (contains at least one node)
 2. max starts from any node (contains at least one node)
 """

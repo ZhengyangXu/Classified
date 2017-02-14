@@ -19,6 +19,11 @@ LCA(3, 5) = 4
 LCA(5, 6) = 7
 
 LCA(6, 7) = 7
+
+Approach
+================
+bottom-up recursion.
+When we meet
 """
 
 """

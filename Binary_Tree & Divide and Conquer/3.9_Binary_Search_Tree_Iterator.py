@@ -17,7 +17,6 @@ For the following binary search tree, in-order traversal by using iterator is [1
   6       12
 """
 
-
 """
 Definition of TreeNode:
 class TreeNode:
@@ -31,24 +30,21 @@ while iterator.hasNext():
     node = iterator.next()
     do something for node
 """
-
+from collections import deque
 
 class BSTIterator:
     #@param root: The root of binary tree.
-
     def __init__(self, root):
         # write your code here
-        self.stack = []
+        self.stack = deque()
         self.cur = root
-
     #@return: True if there has next node, or false
     def hasNext(self):
         # write your code here
-        return (self.cur is not None) or (len(self.stack) != 0)
+        return (self.cur or self.stack)
     #@return: return next node
-
     def next(self):
-        # write your code here
+        #write your code here
         while self.cur is not None:
             self.stack.append(self.cur)
             self.cur = self.cur.left
@@ -56,4 +52,4 @@ class BSTIterator:
         node = self.cur
         if self.cur:
             self.cur = self.cur.right
-        return node
+        return node 

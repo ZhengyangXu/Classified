@@ -8,8 +8,6 @@ Given a binary tree, return the preorder traversal of its nodes' values.
 4   5
 return [1,2,4,5,3].
 """
-
-
 """
 Definition of TreeNode:
 class TreeNode:
@@ -20,20 +18,20 @@ class TreeNode:
 
 
 """
-Use Recursion
+Use Iterative
 """
-
-
 class Solution:
     """
     @param root: The root of binary tree.
-    @return: Preorder in list which contains node values.
+    @return: Preorder in ArrayList which contains node values.
     """
-
     def preorderTraversal(self, root):
+        # write your code here
         if root is None:
             return []
-        stack = [root]
+        from collections import deque
+        stack = deque()
+        stack.append(root)
         preorder = []
         while stack:
             node = stack.pop()
@@ -65,6 +63,9 @@ class Solution:
         traverse(root, result)
         return result
 
+"""
+Use Divide and Conquer
+"""
 class Solution:
     """
     @param root: The root of binary tree.

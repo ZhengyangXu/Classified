@@ -35,7 +35,7 @@ O(N)
 class Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {TreeNode} the root of twe
-    he maximum average of subtree
+    # the maximum average of subtree
     maxNode = None
     maxAvg = None
 

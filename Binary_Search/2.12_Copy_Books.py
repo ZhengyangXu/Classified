@@ -28,30 +28,26 @@ class Solution:
             return 0
     # #     write your code here
 
-    # #     DP approach + Prefix Sum
-        # prefix_sum = []
-        # prefix_sum.append(pages[0])
-        # for i in xrange(1,len(pages)):
-        #     prefix_sum.append(prefix_sum[i-1] + pages[i])
-    #     m = len(pages)
-    #     dic = [[0 for _ in xrange(k)] for _ in xrange(m)]
-    #     # print prefix_sum
-    #     for i in xrange(m):
-    #         for j in xrange(k):
-    #             if i == 0:
-    #                 dic[i][j] = pages[0]
-    #             elif j==0:
-    #                 dic[i][j] = prefix_sum[i]
-    #             else:
-    #                 minimum = sys.maxint
-    #                 for p in xrange(i):
-    #                     minimum = min(minimum, max(dic[p][j-1],prefix_sum[i]-prefix_sum[p]))
-    #                 # print minimum, i,j
-    #                 # print dic
-    #                 dic[i][j] = minimum
+        prefix_sum = pages[:]
+        for i in xrange(1, len(prefix_sum)):
+            prefix_sum[i] = prefix_sum[i] + prefix_sum[i - 1]
+        m = len(pages)
+        DP = [[0 for _ in xrange(m)] for _ in xrange(k)]
+        # let 0,0 in DP stand for 1 person, with book 1
+        for k_i in xrange(k):
+            for p_i in xrange(m):
+                if k_i == 0:
+                    DP[k_i][p_i] = prefix_sum[p_i]
 
-    #     # print dic
-    #     return dic[m-1][k-1]
+                elif p_i == 0:
+                    DP[k_i][p_i] = prefix_sum[0]
+                else:
+                    minimum = sys.maxint
+                    for p_j in xrange(p_i + 1):
+                        minimum = min(minimum, max(DP[k_i - 1][p_j], prefix_sum[p_i] - prefix_sum[p_j]))
+                    DP[k_i][p_i] = minimum
+
+        return DP[k - 1][m - 1]
 
 #-----------------------------------------------------------------------
         # Binary Search

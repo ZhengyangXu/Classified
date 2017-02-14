@@ -26,6 +26,14 @@ class TreeNode:
         self.left, self.right = None, None
 """
 
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
 
 class Solution:
     """
@@ -34,19 +42,19 @@ class Solution:
     """
 
     def isBalanced(self, root):
-
-        def validate(root):
-            if root is None:
-                return True, 0
-
-            balanced, leftHeight = validate(root.left)
-            if not balanced:
-                return False, 0
-            balanced, rightHeight = validate(root.right)
-            if not balanced:
-                return False, 0
-
-            return abs(leftHeight - rightHeight) <= 1, max(leftHeight, rightHeight) + 1
-
-        balanced, _ = validate(root)
+        # write your code here
+        balanced, _ = self.validate(root)
         return balanced
+
+    def validate(self, root):
+        if root is None:
+            return True, 0
+        left_balanced, left_size = self.validate(root.left)
+        right_balanced, right_size = self.validate(root.right)
+        balanced = False
+        if left_balanced and right_balanced and (abs(left_size - right_size) <= 1):
+            balanced = True
+        if not balanced:
+            return False, 0
+        else:
+            return balanced, max(left_size, right_size) + 1

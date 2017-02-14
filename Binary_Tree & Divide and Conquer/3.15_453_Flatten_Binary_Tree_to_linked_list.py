@@ -34,6 +34,16 @@ The following approach is relied on
             root.left = None
 to connect the three pieces
 
+Remember, in the recursion we keep track of tail of the tree because we know the HEADS
+
+that's why
+
+if right_tail:
+    return right_tail
+if left_tail:
+    return left_tail
+return root
+
 another approach with extra O(N) space is to visit it pre_order and
 build linked_list
 """
@@ -45,6 +55,24 @@ class TreeNode:
         this.val = val
         this.left, this.right = None, None
 """
+
+
+
+
+
+
+
+def helper(self, root):
+    if root is None:
+        return
+    left_tail = self.helper(root.left)
+    right_tail = self.helper(root.right)
+
+    if left_tail:
+        root_right = root.right
+        root.right = root.left
+        left_tail.right = root_right
+        root.left = None
 
 
 class Solution:

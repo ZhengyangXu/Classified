@@ -1,4 +1,118 @@
 """
+Three traversals
+
+Depth First Traversals:
+(a) Inorder (Left, Root, Right) : 4 2 5 1 3
+(b) Preorder (Root, Left, Right) : 1 2 4 5 3
+(c) Postorder (Left, Right, Root) : 4 5 2 3 1
+
+Breadth First or Level Order Traversal : 1 2 3 4 5
+Please see this post for Breadth First Traversal.
+
+Inorder Traversal:
+
+Algorithm Inorder(tree)
+   1. Traverse the left subtree, i.e., call Inorder(left-subtree)
+   2. Visit the root.
+   3. Traverse the right subtree, i.e., call Inorder(right-subtree)
+Uses of Inorder
+In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder itraversal s reversed, can be used.
+Example: Inorder traversal for the above given figure is 4 2 5 1 3.
+
+
+Practice Inorder Traversal
+
+
+Preorder Traversal:
+
+Algorithm Preorder(tree)
+   1. Visit the root.
+   2. Traverse the left subtree, i.e., call Preorder(left-subtree)
+   3. Traverse the right subtree, i.e., call Preorder(right-subtree)
+Uses of Preorder
+Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree. Please see http://en.wikipedia.org/wiki/Polish_notation to know why prefix expressions are useful.
+Example: Preorder traversal for the above given figure is 1 2 4 5 3.
+
+Practice Preorder Traversal
+
+
+Postorder Traversal:
+
+Algorithm Postorder(tree)
+   1. Traverse the left subtree, i.e., call Postorder(left-subtree)
+   2. Traverse the right subtree, i.e., call Postorder(right-subtree)
+   3. Visit the root.
+"""
+
+
+
+"""
+Traverse
+"""
+
+# preorder
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Preorder in ArrayList which contains node values.
+    """
+
+    def preorderTraversal(self, root):
+        result = []
+        self.traverse(root, result)
+        return result
+
+    def traverse(self, cur, result):
+        if cur is None:
+            return
+        result.append(cur.val)
+        self.traverse(cur.left, result)
+        self.traverse(cur.right, result)
+
+# postorder
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Postorder in ArrayList which contains node values.
+    """
+
+    def postorderTraversal(self, root):
+        result = []
+        self.traverse(root, result)
+        return result
+
+    def traverse(self, root, result):
+        if root is None:
+            return
+        self.traverse(root.left, result)
+        self.traverse(root.right, result)
+        result.append(root.val)
+
+# inorder
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Inorder in ArrayList which contains node values.
+    """
+
+    def inorderTraversal(self, root):
+        result = []
+        self.traverse(root, result)
+        return result
+
+    def traverse(self, root, result):
+        if root is None:
+            return
+        self.traverse(root.left, result)
+        result.append(root.val)
+        self.traverse(root.right, result)
+        return result
+
+
+"""
 I Come
 I Divide
 I Conquer
@@ -86,11 +200,14 @@ Iterative Bitches
 """
 
 # Inorder Iterative
+
+
 class Solution:
     """
     @param root: The root of binary tree.
     @return: Inorder in ArrayList which contains node values.
     """
+
     def inorderTraversal(self, root):
         # write your code here
         if root == None:
@@ -110,23 +227,30 @@ class Solution:
 
 # Preorder Iterative
 
+
 class Solution:
     """
     @param root: The root of binary tree.
     @return: Preorder in ArrayList which contains node values.
     """
     def preorderTraversal(self, root):
-        def traverse(root, result):
-            if root is None:
-                return
-            result.append(root.val)
-            traverse(root.left, result)
-            traverse(root.right, result)
-        result = []
-        traverse(root, result)
-        return result
+        # write your code here
+        if root is None:
+            return []
+        from collections import deque
+        stack = deque()
+        stack.append(root)
+        preorder = []
+        while stack:
+            node = stack.pop()
+            preorder.append(node.val)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+        return preorder
 
-# Post order
+        # Post order
     def postorderTraversal(self, root):
         if root is None:
             return []

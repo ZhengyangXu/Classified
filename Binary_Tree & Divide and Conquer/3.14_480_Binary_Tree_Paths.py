@@ -26,7 +26,6 @@ Exactly same as last one
 
 """
 
-
 """
 Definition of TreeNode:
 class TreeNode:
@@ -37,26 +36,27 @@ class TreeNode:
 
 
 class Solution:
-    # @param {TreeNode} root the root of binary tree
-    # @param {int} target an integer
-    # @return {int[][]} all valid paths
-
-    def binaryTreePathSum(self, root, target):
+    # @param {TreeNode} root the root of the binary tree
+    # @return {List[str]} all root-to-leaf paths
+    def binaryTreePaths(self, root):
         # Write your code here
         result = []
-        path = []
-        self.dfs(root, path, result, 0, target)
-        return result
-
-    def dfs(self, root, path, result, cur, target):
-        if root is None:
+        path =[]
+        self.dfs(root, path, result)
+        return [ '->'.join([str(i)for i in path]) for path in result]
+    def dfs(self, node, path, result):
+        if node == None:
             return
-        cur += root.val
-        path += [root.val]
-        if cur == target and root.left is None and root.right is None:
+
+
+        path = path + [node.val]
+
+        if node.left is None and node.right is None:
             result.append(path[:])
 
-        self.dfs(root.left, path, result, cur, target)
-        self.dfs(root.right, path, result, cur, target)
+
+        self.dfs(node.left, path, result)
+        self.dfs(node.right, path, result)
+
         path.pop()
-        cur -= root.val
+        

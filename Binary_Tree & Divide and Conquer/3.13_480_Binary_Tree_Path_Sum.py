@@ -32,28 +32,29 @@ class TreeNode:
         self.left, self.right = None, None
 """
 
-
 class Solution:
     # @param {TreeNode} root the root of binary tree
     # @param {int} target an integer
     # @return {int[][]} all valid paths
-
     def binaryTreePathSum(self, root, target):
         # Write your code here
-        result = []
-        path = []
-        self.dfs(root, path, result, 0,  target)
+        path, result, cur = [], [], 0
+        self.traverse(root,path,cur,target,result)
         return result
 
-    def dfs(self, root, path, result, cur, target):
-        if root is None:
+
+    def traverse(self, node, path, cur, target, result):
+        if node is None:
             return
-        cur += root.val
-        path += [root.val]
-        if cur == target and root.left is None and root.right is None:
+        cur += node.val
+        path += [node.val]
+
+        if cur == target and node.left is None and node.right is None:
             result.append(path[:])
 
-        self.dfs(root.left, path, result, cur, target)
-        self.dfs(root.right, path, result, cur, target)
+        self.traverse(node.left, path, cur, target, result)
+        self.traverse(node.right, path, cur, target, result)
+
         path.pop()
-        cur -= root.val
+        cur -= node.val
+    

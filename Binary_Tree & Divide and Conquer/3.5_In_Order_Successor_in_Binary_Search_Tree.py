@@ -29,6 +29,7 @@ Extra Notes
 
 Approach
 ================
+
 two situations
 a. have right tree, leftmost of right tree
 b. not, either parent or null
@@ -53,16 +54,8 @@ class Solution(object):
 
     def inorderSuccessor(self, root, p):
         # write your code here
-        if root == None or p == None:
+        if root is None or p is None:
             return None
-        parent_successor = None
-
-        while root.val != p.val and root != None:
-            if p.val > root.val:
-                root = root.right
-            else:
-                parent_successor = root
-                root = root.left
 
         if p.right != None:
             p = p.right
@@ -72,4 +65,11 @@ class Solution(object):
             return p
 
         else:
+            parent_successor = None
+            while root.val != p.val and root != None:
+                if p.val > root.val:
+                    root = root.right
+                else:
+                    parent_successor = root
+                    root = root.left
             return parent_successor

@@ -15,6 +15,7 @@ Given a binary tree as follow:
    / \
   4   5
 
+
 Approach
 _____________
 Most basic divide and conquer

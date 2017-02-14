@@ -5,7 +5,6 @@ Tree contians both node
 have parent link
 """
 
-
 """
 Definition of ParentTreeNode:
 class ParentTreeNode:
@@ -24,6 +23,7 @@ class Solution:
 
     def lowestCommonAncestorII(self, root, A, B):
         # Write your code here
+        # Write your code here
         A_visited = []
         B_visited = []
 
@@ -34,6 +34,8 @@ class Solution:
                 return A
             if B in A_visited:
                 return B
-            A = A.parent
-            B = B.parent
+            if A:
+                A = A.parent
+            if B:
+                B = B.parent
         return None

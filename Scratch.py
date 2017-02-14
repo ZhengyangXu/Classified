@@ -239,3 +239,110 @@ class Solution:
                 copiers += 1
                 _sum = 0
         return copiers
+
+
+
+# Divide and Conquer
+# class Solution:
+#     """
+#     @param root: The root of binary tree.
+#     @return: Inorder in ArrayList which contains node values.
+#     """
+#     def inorderTraversal(self, root):
+#         # write your code here
+#         result = []
+#         if root==None:
+#             return result
+#         left = self.inorderTraversal(root.left)
+#         right = self.inorderTraversal(root.right)
+
+#         result.extend(left)
+#         result.append(root.val)
+#         result.extend(right)
+
+#         return result
+
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Inorder in ArrayList which contains node values.
+    """
+    def inorderTraversal(self, root):
+        if root is None:
+            return []
+        from collections import deque
+        stack, result = deque(), []
+        cur = root
+        while cur is not None or stack:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
+            node = cur
+            cur = cur.right
+            result.append(node.val)
+        return result
+
+
+
+# class Solution:
+#     """
+#     @param root: The root of binary tree.
+#     @return: Preorder in ArrayList which contains node values.
+#     """
+#     def preorderTraversal(self, root):
+#         # write your code here
+#         if root is None:
+#             return []
+#         from collections import deque
+#         stack = deque()
+#         stack.append(root)
+#         preorder = []
+#         while stack:
+#             node = stack.pop()
+#             preorder.append(node.val)
+#             if node.right:
+#                 stack.append(node.right)
+#             if node.left:
+#                 stack.append(node.left)
+#         return preorder
+
+
+
+# class Solution:
+#     """
+#     @param root: The root of binary tree.
+#     @return: Preorder in ArrayList which contains node values.
+#     """
+#     def preorderTraversal(self, root):
+#         result = []
+#         self.traverse(root, result)
+#         return result
+
+#     def traverse(self,cur,result):
+#         if cur is None:
+#             return
+#         result.append(cur.val)
+#         self.traverse(cur.left,result)
+#         self.traverse(cur.right,result)
+
+
+
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: Preorder in ArrayList which contains node values.
+    """
+    def preorderTraversal(self, root):
+        if root is None:
+            return []
+        result = []
+        left = self.preorderTraversal(root.left)
+        right = self.preorderTraversal(root.right)
+
+        result.append(root.val)
+        result.extend(left)
+        result.extend(right)
+
+        return result            

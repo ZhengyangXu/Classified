@@ -52,20 +52,21 @@ class Solution:
 
     def longestConsecutive(self, root):
         # Write your code here
-        _, result_max = self.helper(root)
+        _, result_max = self.dchelper(root)
         return result_max
 
-    def helper(self, root):
+    def dchelper(self, root):
         if root is None:
             return 0, 0
-        left_from_root, left_max = self.helper(root.left)
-        right_from_root, right_max = self.helper(root.right)
 
-        result_from_root, result_max = 1, 0
+        left_fromRoot, left_max = self.dchelper(root.left)
+        right_fromRoot, right_max = self.dchelper(root.right)
+
+        result_fromRoot, result_max = 1, 1
         if root.left and root.left.val == root.val + 1:
-            result_from_root = max(result_from_root, left_from_root + 1)
+            result_fromRoot = max(result_fromRoot, left_fromRoot + 1)
         if root.right and root.right.val == root.val + 1:
-            result_from_root = max(result_from_root, right_from_root + 1)
-        result_max = max(result_from_root, left_max, right_max)
+            result_fromRoot = max(result_fromRoot, right_fromRoot + 1)
+        result_max = max(result_fromRoot, left_max, right_max)
 
-        return result_from_root, result_max
+        return result_fromRoot, result_max

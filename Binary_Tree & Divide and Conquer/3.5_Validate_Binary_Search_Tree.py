@@ -42,6 +42,8 @@ class Solution:
 
     def isValidBST(self, root):
         # write your code here
+        import sys
+
         def helper(root):
             # assume this retunrs max, min, isBST
             if root == None:

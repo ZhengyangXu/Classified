@@ -46,23 +46,15 @@ class Solution:
 
     def isBalanced(self, root):
         # write your code here
+        balanced, _ = self.validate(root)
+        return balanced
 
-        def validate(root):
-
-            if root is None:
-                return True, 0
-
-            left_balanced, left_height = validate(root.left)
-
-            if not left_balanced:
-                return False, 0
-
-            right_balanced, right_height = validate(root.right)
-
-            if not right_balanced:
-                return False, 0
-
-            return (abs(right_height - left_height) <= 1, max(left_height, right_height) + 1)
-
-        result, _ = validate(root)
-        return result
+    def validate(self, root):
+        if root is None:
+            return True, 0
+        left_balanced, left_size = self.validate(root.left)
+        right_balanced, right_size = self.validate(root.right)
+        if left_balanced and right_balanced and (abs(left_size - right_size) <= 1):
+            return True, max(left_size, right_size) + 1
+        else:
+            return False, 0
