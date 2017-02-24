@@ -1,4 +1,6 @@
 """
+Description
+______________________
 Given a set of candidate numbers (C) and a target number (T),
 find all unique combinations in C where the candidate numbers sums to T.
 The same repeated number may be chosen from C unlimited number of times.
@@ -17,9 +19,14 @@ A solution set is:
 [7]
 [2, 2, 3]
 
+Approach
+__________
+DFS
+Details see notes_for dfs
+Complexity
+___________
+2^N
 """
-
-
 class Solution:
     # @param candidates, a list of integers
     # @param target, integer

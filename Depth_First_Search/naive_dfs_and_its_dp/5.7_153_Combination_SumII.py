@@ -1,9 +1,9 @@
 """
+Description
+________________
 Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
 
 Each number in C may only be used once in the combination.
-
- Notice
 
 All numbers (including target) will be positive integers.
 Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
@@ -30,22 +30,28 @@ class Solution:
     @param target: Given the target number
     @return: All the combinations that sum to target
     """
-
     def combinationSum2(self, candidates, target):
         # write your code here
-        candidates.sort()
-        self.ans, tmp, use = [], [], [0] * len(candidates)
-        self.dfs(candidates, target, 0, 0, tmp, use)
-        return self.ans
+        result, branch = [], []
+        candidates = sorted(candidates)
+        self.dfs(0, candidates, target, result, branch)
+        return result
 
-    def dfs(self, can, target, p, now, tmp, use):
-        if now == target:
-            self.ans.append(tmp[:])
+    def dfs(self, start, candidates, remain, res, branch):
+        # print branch,start,remain
+        if remain == 0:
+            res.append(branch[:])
             return
-        for i in range(p, len(can)):
-            if now + can[i] <= target and (i == 0 or can[i] != can[i - 1] or use[i - 1] == 1):
-                tmp.append(can[i])
-                use[i] = 1
-                self.dfs(can, target, i + 1, now + can[i], tmp, use)
-                tmp.pop()
-                use[i] = 0
+        for i in xrange(start, len(candidates)):
+            # This get rid of repeatitive results
+            if i > start and candidates[i] == candidates[i - 1]:
+                continue
+            if remain - candidates[i] >= 0:
+
+                remain = remain - candidates[i]
+                branch.append(candidates[i])
+                # print branch,i
+                self.dfs(i + 1, candidates, remain, res, branch)
+                branch.pop()
+                remain += candidates[i]
+```

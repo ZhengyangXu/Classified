@@ -20,6 +20,15 @@ If S = [1,2,2], a solution is:
   [1,2],
   []
 ]
+
+Approach
+___________
+DFS
+details see notes for dfs
+
+Complexity
+___________
+Exponential
 """
 
 

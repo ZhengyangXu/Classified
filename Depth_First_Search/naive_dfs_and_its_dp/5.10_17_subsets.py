@@ -21,6 +21,15 @@ If S = [1,2,3], a solution is:
   [1,2],
   []
 ]
+
+Approach
+___________
+DFS
+details see notes for dfs
+
+Complexity
+___________
+Exponential
 """
 
 
@@ -32,16 +41,14 @@ class Solution:
 
     def subsets(self, S):
         # write your code here
-        if S is None or len(S) == 0:
-            return []
-        S = sorted(S)
         result, branch = [], []
-        self.dfs(S, 0, branch, result)
+        S = sorted(S)
+        self.dfs(S, 0, result, branch)
         return result
 
-    def dfs(self, S, pos, branch, result):
+    def dfs(self, S, start, result, branch):
         result.append(branch[:])
-        for i in xrange(pos, len(S)):
+        for i in xrange(start, len(S)):
             branch.append(S[i])
-            self.dfs(S, i + 1, branch, result)
+            self.dfs(S, i + 1, result, branch)
             branch.pop()
