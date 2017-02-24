@@ -130,7 +130,7 @@ class Solution:
         if grid is None or source is None or destination is None:
             return -1
         from collections import deque
-        q = deque
+        q = deque()
         q.append(source)
         steps = 0
         m = len(grid)

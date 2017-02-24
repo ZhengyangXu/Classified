@@ -32,12 +32,11 @@ Return node 4
 # Definition for a undirected graph node
 
 
-class UndirectedGraphNode:
-
-    def __init__(self, x):
-        self.label = x
-        self.neighbors = []
-
+# Definition for a undirected graph node
+# class UndirectedGraphNode:
+#     def __init__(self, x):
+#         self.label = x
+#         self.neighbors = []
 
 class Solution:
     # @param {UndirectedGraphNode[]} graph a list of undirected graph node
@@ -45,7 +44,6 @@ class Solution:
     # @param {UndirectedGraphNode} node an Undirected graph node
     # @param {int} target an integer
     # @return {UndirectedGraphNode} a node
-
     def searchNode(self, graph, values, node, target):
         # Write your code here
         if node is None or target is None or graph is None:
@@ -53,15 +51,17 @@ class Solution:
         if len(graph) == 0:
             return
 
-        q = []
+        from collections import deque
+        q = deque()
+        q.append(node)
         visited = []
-        q.insert(0, node)
+
         while q:
-            cur = q.pop()
-            visited.append(cur)
+            cur = q.popleft()
             if values[cur] == target:
                 return cur
-            if cur.neighbors:
-                for node in cur.neighbors:
-                    if node not in visited:
-                        q.insert(0, node)
+            for neighbor in cur.neighbors:
+                if neighbor not in visited:
+                    q.append(neighbor)
+                    visited.append(neighbor)
+        return None

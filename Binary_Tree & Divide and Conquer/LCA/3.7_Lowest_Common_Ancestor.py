@@ -50,14 +50,15 @@ class Solution:
     """
 
     def lowestCommonAncestor(self, root, A, B):
+        # write your code here
         if root is None:
-            return None
-
-        if root is A or root is B:
-            return root
+            return
 
         left = self.lowestCommonAncestor(root.left, A, B)
         right = self.lowestCommonAncestor(root.right, A, B)
+
+        if root is A or root is B:
+            return root
 
         if left is not None and right is not None:
             return root
@@ -65,4 +66,5 @@ class Solution:
             return left
         if right is not None:
             return right
+
         return None

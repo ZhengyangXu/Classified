@@ -41,7 +41,7 @@ class Solution:
             for j in xrange(n):
                 if grid[i][j]:
                     count += 1
-                    self.dfs(grid, i, j)
+                    self.bfs(grid, i, j)
         return count
 
     def dfs(self, grid, i, j):
@@ -55,3 +55,25 @@ class Solution:
             self.dfs(grid, i + 1, j)
             self.dfs(grid, i, j - 1)
             self.dfs(grid, i, j + 1)
+
+    def bfs(self, grid, i, j):
+        from collections import deque
+        m = len(grid)
+        n = len(grid[0])
+        q = deque()
+        q.append((i, j))
+        while q:
+            x, y = q.popleft()
+            if grid[x][y]:
+                grid[x][y] = 0
+                if self.inbound(x - 1, y, m, n):
+                    q.append((x - 1, y))
+                if self.inbound(x + 1, y, m, n):
+                    q.append((x + 1, y))
+                if self.inbound(x, y - 1, m, n):
+                    q.append((x, y - 1))
+                if self.inbound(x, y + 1, m, n):
+                    q.append((x, y + 1))
+
+    def inbound(self, i, j, m, n):
+        return i <= m - 1 and i >= 0 and j >= 0 and j <= n - 1
