@@ -60,7 +60,7 @@ class Solution:
                 else:
                     list_s[s_i] = chr(ord_a + i)
                     temp = ''.join(list_s)
-                    if temp in source_dic:
+                    ifemp in source_dic:
                         neighbors.append(temp)
                         source_dic.remove(temp)
         return neighbors

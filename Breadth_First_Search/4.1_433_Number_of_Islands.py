@@ -19,8 +19,11 @@ return 3.
 Approach
 ___________
 Loop through
-    Dfs on current island to flip all 1s that constructed this island to 0
+    Dfs/BFS on current island to flip all 1s that constructed this island to 0
     count how many ones there are
+
+Complexity
+O(M*N)
 """
 
 

@@ -5,6 +5,7 @@ Given a string s, partition s such that every substring of the partition is a pa
 Return all possible palindrome partitioning of s.
 
 Example
+________________
 Given s = "aab", return:
 
 [
@@ -17,7 +18,11 @@ _______________
 obiviously we use DFS here
 care
 0. when append branch, make a copy
-1. standard pop off branch procedure 
+1. standard pop off branch procedure
+
+Complexity
+___________________
+Exponential 
 """
 
 

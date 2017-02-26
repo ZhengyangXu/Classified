@@ -10,7 +10,7 @@ s = 4[ac]dy, return acacacacdy
 s = 3[2[ad]3[pf]]xyz, return adadpfpfpfadadpfpfpfadadpfpfpfxyz
 """
 
-# version 2
+# version 1 -- Recursion
 
 
 class Solution:
@@ -19,32 +19,59 @@ class Solution:
 
     def expressionExpand(self, s):
         # Write your code here
+        if s is None or not s:
+            return ""
         if '[' not in s:
             return s
-
-        if not s[0].isdigit():
-            index = 0
-            while not s[index].isdigit():
-                index += 1
-
-            left_str = s[0: index]
-            right_str = s[index:]
-            times = 1
-        else:
+        if s[0].isdigit():
             left = s.find('[')
-            times = int(s[0: left])
             pair = 0
-            for index in xrange(left, len(s)):
-                if s[index] == '[':
+            times = int(s[:left])
+            for right in xrange(left, len(s)):
+                if s[right] == '[':
                     pair += 1
-                elif s[index] == ']':
+                if s[right] == ']':
                     pair -= 1
                 if pair == 0:
-                    right = index
                     break
 
-            left_str = s[left + 1: right]
-            right_str = s[right + 1:]
+            leftstring = s[left + 1:right]
+            rightstring = s[right + 1:]
+        else:
+            times = 1
+            for right in xrange(len(s)):
+                if s[right].isdigit():
+                    break
+            leftstring = s[:right]
+            rightstring = s[right:]
+        return self.expressionExpand(leftstring) * times + self.expressionExpand(rightstring)
 
-        return self.expressionExpand(left_str) * times + \
-            self.expressionExpand(right_str)
+# Version 2 -- Stack
+
+
+class Solution:
+    # @param {string} s  an expression includes numbers, letters and brackets
+    # @return {string} a string
+
+    def expressionExpand(self, s):
+        from collections import deque
+        stack = deque()
+        number = 0
+        for char in s:
+            if char.isdigit():
+                number = int(char) + number * 10
+            elif char == '[':
+                stack.append(number)
+                number = 0
+            elif char == ']':
+                s = []
+                while stack:
+                    cur = stack.pop()
+                    if type(cur) == int:
+                        stack.append(''.join(reversed(s)) * cur)
+                        break
+                    s.append(cur)
+            else:
+                stack.append(char)
+
+        return ''.join(stack)
