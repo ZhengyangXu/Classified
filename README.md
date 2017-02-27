@@ -39,7 +39,7 @@
 * 30-3.19. *[Summary 0--Three ways of traversal](Binary_Tree & Divide and Conquer/sum0_three_ways_of_traversal.py)*
 
 #### Ladder 3 -- BFS
-* 31-4.1_433_[Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
+* 31-4.1_433[Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
 
 
 
