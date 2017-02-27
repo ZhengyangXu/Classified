@@ -28,16 +28,25 @@ The sequences [1,2], [1,3], and [2,3] can uniquely reconstruct the original sequ
 Given org = [4,1,5,2,6,3], seqs = [[5,2,6,3],[4,1,5,2]]
 Return true
 
+Approach
+____________________
+Topological sorting
++++++++++++++++++++++++
+Compared to course schedule problem. Only track node that appeared in seqs
+in Indegrees
+0. build indegrees and edges
+    a. eg. [[1,2], [2,3]]
+    b. translates to 1->2, 2->3
+1. start Topological sorting
+    a. only one path <-> Queue is always 1
+    b. the path is the same as org
+2. if satisify a&&b return True else False
 
-seqs = [1,2] , [1,3]
-1->2 ; 1->3
-find topological sorting path
 
-build
-indegrees and edges to do topological sorting
-
-(1) only one path <-> Queue is always 1
-(2) the path is the same as org
+Complexity
+____________________
+Time - O(N*M)
+Space - O(N*M)
 """
 
 

@@ -27,6 +27,17 @@ Value of node 4 is 50
 Value of node 5 is 50
 
 Return node 4
+
+Approach
+________________________
+Standard BFS. remember things that enter queue should be marked as visited,
+not when it's popped
+
+Complexity
+_______________
+
+TIme - O(N)
+Complexity - O(N)
 """
 
 # Definition for a undirected graph node
@@ -37,13 +48,13 @@ Return node 4
 #     def __init__(self, x):
 #         self.label = x
 #         self.neighbors = []
-
 class Solution:
     # @param {UndirectedGraphNode[]} graph a list of undirected graph node
     # @param {dict} values a dict, <UndirectedGraphNode, (int)value>
     # @param {UndirectedGraphNode} node an Undirected graph node
     # @param {int} target an integer
     # @return {UndirectedGraphNode} a node
+
     def searchNode(self, graph, values, node, target):
         # Write your code here
         if node is None or target is None or graph is None:
@@ -54,7 +65,7 @@ class Solution:
         from collections import deque
         q = deque()
         q.append(node)
-        visited = []
+        visited = set([node])
 
         while q:
             cur = q.popleft()
@@ -63,5 +74,5 @@ class Solution:
             for neighbor in cur.neighbors:
                 if neighbor not in visited:
                     q.append(neighbor)
-                    visited.append(neighbor)
+                    visited.add(neighbor)
         return None

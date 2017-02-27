@@ -1,4 +1,6 @@
 """
+Description
+___________________
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
 Have you met this question in a real interview? Yes
@@ -10,6 +12,17 @@ Given binary tree {3,9,20,#,#,15,7},
   9  20
     /  \
    15   7
+
+Approach
+____________________
+standard BFS approach
++
+force to pop all current level node using a for loop
+append all this level popped nodes as a list and append to result
+
+Complexity
+Time - O(N)
+Space- O(N)
 """
 
 """
@@ -28,23 +41,21 @@ class Solution:
     """
     def levelOrder(self, root):
         # write your code here
-        if root ==None:
+        if root is None:
             return []
-        q = []
-        q.insert(0, root)
+        from collections import deque
+        q = deque()
         result = []
-        while len(q) > 0:
-            size = len(q)
+        q.append(root)
+        while q:
+            level_size = len(q)
             level = []
-            while size > 0:
-                node = q.pop()
-                level.append(node.val)
-                if node.left:
-                    q.insert(0,node.left)
-                if node.right:
-                    q.insert(0,node.right)
-                size -= 1
-
+            for i in xrange(level_size):
+                cur = q.popleft()
+                level.append(cur.val)
+                if cur.left:
+                    q.append(cur.left)
+                if cur.right:
+                    q.append(cur.right)
             result.append(level)
-
         return result

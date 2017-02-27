@@ -17,52 +17,8 @@ and x = 0, y = 2,
 Return 6.
 
 
-// DFS
-class Solution {
-public:
-    int minArea(vector<vector<char>>& image, int x, int y) {
-        int left = y, right = y, up = x, down = x;
-        dfs(image, x, y, left, right, up, down);
-        return (right - left + 1) * (down - up + 1);
-    }
-    void dfs(vector<vector<char>> &image, int x, int y, int &left, int &right, int &up, int &down) {
-        if (x < 0 || x >= image.size() || y < 0 || y >= image[0].size() || image[x][y] != '1') return;
-        left = min(left, y);
-        right = max(right, y);
-        up = min(up, x);
-        down = max(down, x);
-        image[x][y] = '2';
-        dfs(image, x + 1, y, left, right, up, down);
-        dfs(image, x - 1, y, left, right, up, down);
-        dfs(image, x, y + 1, left, right, up, down);
-        dfs(image, x, y - 1, left, right, up, down);
-    }
-};
-
-// Binary Search
-class Solution {
-public:
-    int minArea(vector<vector<char>>& image, int x, int y) {
-        int m = image.size(), n = image[0].size();
-        int up = binary_search(image, true, 0, x, 0, n, true);
-        int down = binary_search(image, true, x + 1, m, 0, n, false);
-        int left = binary_search(image, false, 0, y, up, down, true);
-        int right = binary_search(image, false, y + 1, n, up, down, false);
-        return (right - left) * (down - up);
-    }
-    int binary_search(vector<vector<char>> &image, bool h, int i, int j, int low, int high, bool opt) {
-        while (i < j) {
-            int k = low, mid = (i + j) / 2;
-            while (k < high && (h ? image[mid][k] : image[k][mid]) == '0') ++k;
-            if (k < high == opt) j = mid;
-            else i = mid + 1;
-        }
-        return i;
-    }
-};
-
-2
-======================================
+Approach
+_________________________
 根据已有的black pixel的左边，分别找到上下左右含有1的边界，利用binary search查找。
 在discuss里有很pythonic的写法，可以学习一下。 这里我根据我记忆的binary search的模板进行了修改。 基本上就是利用search for a range的写法。
 
@@ -74,7 +30,7 @@ class Solution(object):
     def minArea(self, image, x, y):
         """
         :type image: List[List[str]]
-        :type x: int
+        :type x: intz
         :type y: int
         :rtype: int
         """

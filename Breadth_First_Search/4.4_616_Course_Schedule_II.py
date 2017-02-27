@@ -15,6 +15,10 @@ Return [0,1]
 
 Given n = 4, prerequisites = [1,0],[2,0],[3,1],[3,2]]
 Return [0,1,2,3] or [0,2,1,3]
+
+Approach & Time Complexity
+___________________
+Exact Same as previous one excpet we append the path here                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 """
 
 
