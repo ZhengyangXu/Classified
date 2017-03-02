@@ -40,6 +40,7 @@
 
 #### Ladder 3 -- BFS
 * 31-4.1_433[Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
+* 32-4.269
 
 
 
