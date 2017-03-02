@@ -38,9 +38,39 @@
 * 29-3.18. *[7/18/19 Three LCA Problems](Binary_Tree & Divide and Conquer/LCA/)*
 * 30-3.19. *[Summary 0--Three ways of traversal](Binary_Tree & Divide and Conquer/sum0_three_ways_of_traversal.py)*
 
-#### Ladder 3 -- BFS
-* 31-4.1_433[Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
-* 32-4.269
+#### Ladder 4 -- BFS
+* 31-4.1_433. [Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
+* 32-4.2_618. [Search Graph nodes](Breadth_First_Search/4.2_618_Search_Graph_nodes.py)
+* 33-4.2_69. [Binary Tree level order Traversal](Breadth_First_Search/4.2_69_Binary_Tree_level_order_Traversal.py)
+* 35-4.3_615. [Course Schedule](Breadth_First_Search/4.3_615_Course_Schedule.py)
+* 36-4.4_616. [Course Schedule II](Breadth_First_Search/4.4_616_Course_Schedule_II.py)
+* 37-4.5_611. [Knight_Shortest_Path](Breadth_First_Search/4.5_611_Knight_Shortest_Path.py	)
+* 38-4.6_605. [Sequence Reconstruction](Breadth_First_Search/4.6_Sequence_Construction.py)
+* 39-4.7_600. [Smallest Rectangle enclosing black pixels](Breadth_First_Search/4.7_600_Smallest_Rectangle_enclosing_black_pixels.py)
+* 40-4.8_598. [Zombie_in_Matrix](Breadth_First_Search/4.8_598_Zombie_in_Matrix.py)
+* 41-4.9_615. [Clone Graph](Breadth_First_Search/4.9_137_Clone_Graph.py)
+* 42-4.10_127. Topological_sorting[Topological Sorting](Breadth_First_Search/4.10_127_Topological_sorting.py)
+* 43-4.11_178. [graph Valid Tree](Breadth_First_Search/4.11_178_graph_valid_Tree.py)
+* 44-4.12_573. [Build_Post_Office](Breadth_First_Search/4.12_573_Build_Post_Office.py	)
+* 45-4.13_574. [build_post_office_II.py](Breadth_First_Search/4.13_574_build_post_office_II.py)
 
+#### Ladder 5 -- DFS&BackTracking
 
+* 45-5.1_551. [Nested List weight Sum](Breadth_First_Search/5.1_551_Nested_List_weight_Sum.py)
+* 46-5.2_575. [Expression_Expand](Breadth_First_Search/5.2_575_Expression_Expand.py)
+* 47-5.3_528. [Flatten NestedList Iterator](Breadth_First_Search/5.3_528_Flatten_Nested_List_Iterator.py)
+* *Naive Dfs and related DP ---------> Start*
+* 48-5.4_136. [Palindrom_Partitioning](Breadth_First_Search/naive_dfs_and_its_dp/5.4_136_Palindrom_Partitioning.py)
+* 49-5.5_108. [Palindrom_Paritioning_II](Breadth_First_Search/naive_dfs_and_its_dp/5.5_108_Palindrom_Paritioning_II.py)
+* 50-5.6_135. [Combination_Sum](Breadth_First_Search/naive_dfs_and_its_dp/5.6_135_Combination_Sum.py)
+* 51-5.7_153. [Combination_SumII](Breadth_First_Search/naive_dfs_and_its_dp/5.7_153_Combination_SumII.py)
+* 52-5.8_15. [Permutations](Breadth_First_Search/naive_dfs_and_its_dp/5.8_15_Permutations.py)
+* 53-5.9_16. [permutationsII.py](Breadth_First_Search/naive_dfs_and_its_dp/5.9_16_permutationsII.py	)
+* 54-5.10_17 [subsets](Breadth_First_Search/naive_dfs_and_its_dp/5.10_17_subsets.py)
+* 55-5.11_18 [subsetsII](Breadth_First_Search/naive_dfs_and_its_dp/5.11_18_subsetsII.py)
+* *Naive Dfs and related DP ---------> End*
+* 56-5.8_120. [Word_Ladder](Breadth_First_Search/naive_dfs_and_its_dp/5.8_120_Word_Ladder.py)
+* 57-5.9_121. [word_ladder_ii](Breadth_First_Search/naive_dfs_and_its_dp/5.9_121_word_ladder_ii.py)	
+* 58-5.10_107. [word_break](Breadth_First_Search/naive_dfs_and_its_dp/5.10_107_word_break.py)
+* 59-5.11_582. [word_break_ii](Breadth_First_Search/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
 
