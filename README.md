@@ -67,7 +67,10 @@
 * 52-5.8_15. [Permutations](Breadth_First_Search/naive_dfs_and_its_dp/5.8_15_Permutations.py)
 * 53-5.9_16. [permutationsII.py](Breadth_First_Search/naive_dfs_and_its_dp/5.9_16_permutationsII.py	)
 * 54-5.10_17 [subsets](Breadth_First_Search/naive_dfs_and_its_dp/5.10_17_subsets.py)
-* 55-5.11_18 [subsetsII](Breadth_First_Search/naive_dfs_and_its_dp/5.11_18_subsetsII.py	)
+* 55-5.11_18 [subsetsII](Breadth_First_Search/naive_dfs_and_its_dp/5.11_18_subsetsII.py)
 * *Naive Dfs and related DP ---------> End*
-
+* 56-5.8_120. [Word_Ladder](Breadth_First_Search/naive_dfs_and_its_dp/5.8_120_Word_Ladder.py)
+* 57-5.9_121. [word_ladder_ii](Breadth_First_Search/naive_dfs_and_its_dp/5.9_121_word_ladder_ii.py	
+* 58-5.10_107. [word_break](Breadth_First_Search/naive_dfs_and_its_dp/5.10_107_word_break.py)
+* 59-5.11_582. [word_break_ii](Breadth_First_Search/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
 
