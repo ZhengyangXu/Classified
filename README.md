@@ -38,7 +38,7 @@
 * 29-3.18. *[7/18/19 Three LCA Problems](Binary_Tree & Divide and Conquer/LCA/)*
 * 30-3.19. *[Summary 0--Three ways of traversal](Binary_Tree & Divide and Conquer/sum0_three_ways_of_traversal.py)*
 
-#### Ladder 3 -- BFS
+#### Ladder 4 -- BFS
 * 31-4.1_433. [Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
 * 32-4.2_618. [Search Graph nodes](Breadth_First_Search/4.2_618_Search_Graph_nodes.py)
 * 33-4.2_69. [Binary Tree level order Traversal](Breadth_First_Search/4.2_69_Binary_Tree_level_order_Traversal.py)
@@ -54,8 +54,14 @@
 * 44-4.12_573. [Build_Post_Office](Breadth_First_Search/4.12_573_Build_Post_Office.py	)
 * 45-4.13_574. [build_post_office_II.py](Breadth_First_Search/4.13_574_build_post_office_II.py)
 
+#### Ladder 5 -- DFS&BackTracking
 
-
+* 45-5.1_551. [Nested List weight Sum](Breadth_First_Search/5.1_551_Nested_List_weight_Sum.py)
+* 46-5.2_575. [Expression_Expand](Breadth_First_Search/5.2_575_Expression_Expand.py)
+* 47-5.3_528. [Flatten NestedList Iterator](Breadth_First_Search/5.3_528_Flatten_Nested_List_Iterator.py)
+###### Naive Dfs and related DP
+* 48-5.1_551. [Nested List weight Sum](Breadth_First_Search/naive_dfs_and_its_dp/5.1_551_Nested_List_weight_Sum.py)
+* 49-5.1_551. [Nested List weight Sum](Breadth_First_Search/5.1_551_Nested_List_weight_Sum.py)
 
 
 
