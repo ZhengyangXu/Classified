@@ -62,10 +62,8 @@
 
 ----------------
 *Naive Dfs and related DP*
-----------------
-
 * 48-5.1_551. [Nested List weight Sum](Breadth_First_Search/naive_dfs_and_its_dp/5.1_551_Nested_List_weight_Sum.py)
 * 49-5.1_551. [Nested List weight Sum](Breadth_First_Search/5.1_551_Nested_List_weight_Sum.py)
-
+-------
 
 
