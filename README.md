@@ -60,8 +60,14 @@
 * 46-5.2_575. [Expression_Expand](Breadth_First_Search/5.2_575_Expression_Expand.py)
 * 47-5.3_528. [Flatten NestedList Iterator](Breadth_First_Search/5.3_528_Flatten_Nested_List_Iterator.py)
 * *Naive Dfs and related DP ---------> Start*
-* 48-5.1_551. [Nested List weight Sum](Breadth_First_Search/naive_dfs_and_its_dp/5.1_551_Nested_List_weight_Sum.py)
-* 49-5.1_551. [Nested List weight Sum](Breadth_First_Search/5.1_551_Nested_List_weight_Sum.py)
+* 48-5.4_136. [Palindrom_Partitioning](Breadth_First_Search/naive_dfs_and_its_dp/5.4_136_Palindrom_Partitioning.py)
+* 49-5.5_108. [Palindrom_Paritioning_II](Breadth_First_Search/naive_dfs_and_its_dp/5.5_108_Palindrom_Paritioning_II.py)
+* 50-5.6_135. [Combination_Sum](Breadth_First_Search/naive_dfs_and_its_dp/5.6_135_Combination_Sum.py)
+* 51-5.7_153. [Combination_SumII](Breadth_First_Search/naive_dfs_and_its_dp/5.7_153_Combination_SumII.py)
+* 52-5.8_15. [Permutations](Breadth_First_Search/naive_dfs_and_its_dp/5.8_15_Permutations.py)
+* 53-5.9_16. [permutationsII.py](Breadth_First_Search/naive_dfs_and_its_dp/5.9_16_permutationsII.py	)
+* 54-5.10_17 [subsets](Breadth_First_Search/naive_dfs_and_its_dp/5.10_17_subsets.py)
+* 55-5.11_18 [subsetsII](Breadth_First_Search/naive_dfs_and_its_dp/5.11_18_subsetsII.py	)
 * *Naive Dfs and related DP ---------> End*
 
 
