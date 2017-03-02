@@ -39,8 +39,23 @@
 * 30-3.19. *[Summary 0--Three ways of traversal](Binary_Tree & Divide and Conquer/sum0_three_ways_of_traversal.py)*
 
 #### Ladder 3 -- BFS
-* 31-4.1_433[Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
-* 32-4.269
+* 31-4.1_433. [Number_of_Islands](Breadth_First_Search/4.1_433_Number_of_Islands.py)
+* 32-4.2_618. [Search Graph nodes](Breadth_First_Search/4.2_618_Search_Graph_nodes.py)
+* 33-4.2_69. [Binary Tree level order Traversal](Breadth_First_Search/4.2_69_Binary_Tree_level_order_Traversal.py)
+* 35-4.3_615. [Course Schedule](Breadth_First_Search/4.3_615_Course_Schedule.py)
+* 36-4.4_616. [Course Schedule II](Breadth_First_Search/4.4_616_Course_Schedule_II.py)
+* 37-4.5_611. [Knight_Shortest_Path](Breadth_First_Search/4.5_611_Knight_Shortest_Path.py	)
+* 38-4.6_605. [Sequence Reconstruction](Breadth_First_Search/4.6_Sequence_Construction.py)
+* 39-4.7_600. [Smallest Rectangle enclosing black pixels](Breadth_First_Search/4.7_600_Smallest_Rectangle_enclosing_black_pixels.py)
+* 40-4.8_598. [Zombie_in_Matrix](Breadth_First_Search/4.8_598_Zombie_in_Matrix.py)
+* 41-4.9_615. [Clone Graph](Breadth_First_Search/4.9_137_Clone_Graph.py)
+* 42-4.10_127. Topological_sorting[Topological Sorting](Breadth_First_Search/4.10_127_Topological_sorting.py)
+* 43-4.11_178. [graph Valid Tree](Breadth_First_Search/4.11_178_graph_valid_Tree.py)
+* 44-4.12_573. [Build_Post_Office](Breadth_First_Search/4.12_573_Build_Post_Office.py	)
+* 45-4.13_574. [build_post_office_II.py](Breadth_First_Search/4.13_574_build_post_office_II.py)
+
+
+
 
 
 
