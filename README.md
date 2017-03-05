@@ -74,3 +74,5 @@
 * 58-5.10_107. [word_break](Breadth_First_Search/naive_dfs_and_its_dp/5.10_107_word_break.py)
 * 59-5.11_582. [word_break_ii](Breadth_First_Search/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
 
+#### Ladder 6 -- LinkedList & Array
+* 60-6.1_60. [Window_Sum](Breadth_First_Search/6.LinkedList&Array/6.1_60_Window_Sum.py)
