@@ -14,6 +14,12 @@ A btter approach is to loop through and when we calcuate the current window sum
 Do new_sum = old_sum + (nums[old_last+1] - nums[old_first])
 
 That's it
+
+Complexity
+______________
+
+Time- O(N)
+Space- O(1)
 """
 
 

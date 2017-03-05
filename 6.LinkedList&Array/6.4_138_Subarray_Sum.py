@@ -20,6 +20,10 @@ pre = [-3, -2, 0, -3, 1]
 difference between pre[4] - pre[1] stands for sum(2,5)(inclusive) eqauls to 3
 We can do two loops, but sing hashmap is a better solution with only one loop Obviously
 
+Complexity
+___________________
+Time - O(N)
+Space - O(N)
 """
 
 

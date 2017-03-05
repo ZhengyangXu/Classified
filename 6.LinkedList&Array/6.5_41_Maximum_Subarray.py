@@ -17,6 +17,12 @@ let s[i] be the maximum sum ending at nums[i]
 s[0] = 0
 s[i] = max(s[i-1]+s[i],nums[i])
 
+Complexity
+_____________
+Time - O(N)
+Space - O(N)
+
+
 Kadine's Algo
 +++++++++++
 This is essentially DP
@@ -29,6 +35,11 @@ if the sum becomes negaive, we reset
 1. set pointer to i + 1 (if we need to know the indexes)
 
 keep comparing global sum with local sum and update global with larger one
+
+Complexity
+___________
+Time - O(N)
+Space - O(1)
 """
 
 

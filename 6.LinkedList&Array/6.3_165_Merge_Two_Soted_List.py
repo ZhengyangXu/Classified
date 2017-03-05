@@ -12,6 +12,12 @@ Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null.
 Approach
 _____________
 穿针引线
+
+
+Complexity
+_______________
+Time - O(M+N)
+Space - O(1)
 """
 
 
