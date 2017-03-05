@@ -75,4 +75,15 @@
 * 59-5.11_582. [word_break_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
 
 #### Ladder 6 -- LinkedList & Array
-* 60-6.1_60. [Window_Sum](Breadth_First_Search/6.LinkedList&Array/6.1_60_Window_Sum.py)
+* 60-6.1_60. [Window_Sum](6.LinkedList&Array/6.1_60_Window_Sum.py)
+* 61-6.2_599. [Insert Into a Cyclic Sorted list](6.LinkedList&Array/6.2_599_Insert_Into_a_Cyclic_Sorted_list.py)
+* 62-6.3_165. [Merge Two Soted List](6.LinkedList&Array/6.3_165_Merge_Two_Soted_List.py	)
+* 63-6.4_138. [Subarray_Sum](6.LinkedList&Array/6.4_138_Subarray_Sum.py)
+* 64-6.5_41. [Maximum_Subarray](6.LinkedList&Array/6.5_41_Maximum_Subarray.py)
+* 65-6.6_139. [Subarray_Sum_Closest](6.LinkedList&Array/6.6_139_Subarray_Sum_Closest.py)
+* 67-6.7_106. [Copy_List_with_Random_Pointer](6.LinkedList&Array/6.7_106_Copy_List_with_Random_Pointer.py)
+* 68-6.8. [Linked_List_Cycle](6.LinkedList&Array/6.8_Linked_List_Cycle.py)
+* 69-6.8_103. [Linked_List_Cycle_II](6.LinkedList&Array/6.8_103_Linked_List_Cycle_II.py)
+* 70-6.9_98. [Sort_List](6.LinkedList&Array/6.9_98_Sort_List.py) 
+* 70-6.10. [Median_of_sorted_Arrays](6.LinkedList&Array/6.10_Median_of_sorted_Arrays.py)
+
