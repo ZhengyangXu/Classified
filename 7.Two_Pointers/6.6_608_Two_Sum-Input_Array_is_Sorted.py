@@ -12,6 +12,16 @@ Example
 _____________
 Given nums = [2, 7, 11, 15], target = 9
 return [1, 2]
+
+Approach
+_____________
+Sorted now
+Use the left, right two pointers stratedgy
+
+Complexity
+____________
+Time - O(N.Log(N))
+Space - O(1)
 """
 
 

@@ -9,6 +9,16 @@ Example
 ___________
 Given array nums = [-1, 2, 1, -4], and target = 4.
 The minimum difference is 1. (4 - (2 + 1) = 1).
+
+Approach
+___________
+Very Similar to the standard 2Sum except we do
+min_dist = min(min_dist, abs(v - target)) when v < target or v>target
+
+Complexity
+____________
+Time - O(N.Log(N))
+Space - O(1)
 """
 
 

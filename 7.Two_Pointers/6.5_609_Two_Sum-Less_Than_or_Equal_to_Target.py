@@ -14,6 +14,25 @@ Return 5.
 2 + 15 < 24
 7 + 11 < 24
 7 + 15 < 25
+
+Approach
+___________________
+0. Sort
+1. Have two pointers, left, right = 0, len(nums) - 1; s = 0
+2. while left < right
+    when nums[left] + nums[right] <= target:
+        (a). anything between right and left added with left
+        will satsiefy <= target constraint so
+        s += (right-left)
+        (b). move left => left += 1
+    else:
+        right -= 1
+return s
+
+Complexity
+____________
+Time - O(N.Log(N))
+Space - O(1)
 """
 
 class Solution:
@@ -37,5 +56,3 @@ class Solution:
             else:
                 right -= 1
         return s
-
-                
