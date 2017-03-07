@@ -73,6 +73,7 @@
 * 57-5.9_121. [word_ladder_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.9_121_word_ladder_ii.py)	
 * 58-5.10_107. [word_break](5.DFS&BackTracking/naive_dfs_and_its_dp/5.10_107_word_break.py)
 * 59-5.11_582. [word_break_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
+* 
 
 #### Ladder 6 -- LinkedList & Array
 * 60-6.1_60. [Window_Sum](6.LinkedList&Array/6.1_60_Window_Sum.py)
@@ -85,5 +86,20 @@
 * 68-6.8. [Linked_List_Cycle](6.LinkedList&Array/6.8_Linked_List_Cycle.py)
 * 69-6.8_103. [Linked_List_Cycle_II](6.LinkedList&Array/6.8_103_Linked_List_Cycle_II.py)
 * 70-6.9_98. [Sort_List](6.LinkedList&Array/6.9_98_Sort_List.py) 
-* 70-6.10. [Median_of_sorted_Arrays](6.LinkedList&Array/6.10_Median_of_sorted_Arrays.py)
+* 70-6.10_65. [Median_of_two_Sorted_arrays](6.LinkedList&Array/6.10_Median_of_sorted_Arrays.py)
 
+
+#### Ladder 7 -- Two Pointers
+* 71-7.1_607. [Two_Sum-DataStructure_Design](7.Two_Pointers/7.1_607_Two_Sum-DataStructure_Design.py)
+* 72-7.2_521. [Remove_Duplicates_Numbers_in_Array](7.Two_Pointers/7.2_521_Remove_Duplicates_Numbers_in_Array.py)
+* 73-7.3_100. [Remove_Duplicates_from_Sorted_Array](7.Two_Pointers/7.3_100_Remove_Duplicates_from_Sorted_Array.py)
+* 74-7.4_101. [Remove_Duplicates_from_Sorted_Array_II](7.Two_Pointers/7.4_101_Remove_Duplicates_from_Sorted_Array_II.py)
+* 75-7.5_609. [Two_Sum-Less_Than_or_Equal_to_Target.py](7.Two_Pointers/7.5_609_Two_Sum-Less_Than_or_Equal_to_Target.py	)
+* 76-7.6_608. [Two_Sum-Input_Array_is_Sorted.py](7.Two_Pointers/7.6_608_Two_Sum-Input_Array_is_Sorted.py)
+* 77-7.7_587. [Two_Sum-Unique_Pairs](7.Two_Pointers/7.7_587_Two_Sum-Unique_Pairs.py)
+* 78-7.8_533. [Two_Sum-Closest_to_target.py](7.Two_Pointers/7.8_533_Two_Sum-Closest_to_target.py)
+* 79-7.9_148. [Sort_Colors.py](7.Two_Pointers/7.9_148_Sort_Colors.py)
+* 80-7.10_143. [Sort_Colors_II](7.Two_Pointers/7.10_143_Sort_Colors_II.py)
+* 81-7.11_57. [3Sum](7.Two_Pointers/7.11_57_3Sum.py)
+* 82-7.12_58. [4Sum](7.Two_Pointers/7.12_58_4Sum.py)
+* 83-7.13_31. [Partition_Array](7.Two_Pointers/7.13_31_Partition_Array.py)
