@@ -73,7 +73,7 @@
 * 57-5.9_121. [word_ladder_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.9_121_word_ladder_ii.py)	
 * 58-5.10_107. [word_break](5.DFS&BackTracking/naive_dfs_and_its_dp/5.10_107_word_break.py)
 * 59-5.11_582. [word_break_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
-* 
+* 82-7.12_58. [4Sum](7.Two_Pointers/7.12_58_4Sum.py)
 
 #### Ladder 6 -- LinkedList & Array
 * 60-6.1_60. [Window_Sum](6.LinkedList&Array/6.1_60_Window_Sum.py)
