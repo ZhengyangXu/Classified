@@ -40,7 +40,8 @@ Notes
 
 Complexity
 ______________
-
+Time - O(N)
+Space - O(1)
 """
 
 
