@@ -22,9 +22,30 @@ Given target = 3, return 2.
 
 Approach
 _____________________
-search from row's max and col's mnimum
-to
-row's max and cols' minimum
+m = len(matrix)
+n = len(matrix[0])
+0. Start from Matrix[m-1][n-1] where
+    a. to increase must move right
+    b. decrease must move up
+
+    x = m-1 ; y = 0
+
+
+    while x >= 0 and y < n:
+        if target > matrix[x][y]:
+            y += 1
+        elif target < matrix[x][y]:
+            x -= 1
+        else:
+            # since no duplicates in each col/row
+            y += 1
+            x -= 1
+            count += 1
+    return count
+
+Complexity
+____________
+Time -- O(M+N)
 """
 
 
@@ -55,6 +76,7 @@ class Solution:
             elif target < matrix[x][y]:
                 x -= 1
             else:
+                # since no duplicates in each col/row
                 y += 1
                 x -= 1
                 count += 1

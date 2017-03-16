@@ -1,13 +1,35 @@
 """
 Description
-======================
+_______________________
 Given n pieces of wood with length L[i] (integer array).
 Cut them into small pieces to guarantee you could have equal or more than k pieces with the same length.
 What is the longest length you can get from the n pieces of wood? \Given L & k, return the maximum length of the small pieces.
 
 Example
-======================
+______________________
 For L=[232, 124, 456], k=7, return 114.
+
+Approach
+______________________
+Binary search
+++++++++++++++
+l - length of small piece
+L - collections of all current piceces
+maxlength - max(L)
+Range:
+Contraint: the pieces generated of current l is bigger or equal to k
+
+Goal: find the largest (last position) of l
+
+range: 1, maxlength
+
+Compleixty
+______________
+N - length of L
+k = max(L)
+
+Time - O(Nlg(k))
+Space - O(1)
 """
 
 

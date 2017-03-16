@@ -1,14 +1,21 @@
 """
 Description
-===============
+_________________
 Given a sorted array of n integers, find the starting and ending position of a given target value.
 
 If the target is not found in the array, return [-1, -1].
 
 Example
-================
+__________________
 Given [5, 7, 7, 8, 8, 10] and target value 8,
 return [3, 4].
+
+Approach
+___________
+Binary Searches
++++++++++++++++
+Do a binary search to find the first position
+Do a binary search to find the last position 
 """
 
 

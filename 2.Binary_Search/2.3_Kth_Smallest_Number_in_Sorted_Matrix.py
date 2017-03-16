@@ -1,7 +1,7 @@
 """
 Description
 ___________
-Find the kth smallest number in at row and column sorted matrix.]]
+Find the kth smallest number in a  row and column sorted matrix
 
 Example
 ___________
@@ -93,7 +93,7 @@ This is very similar to search in matrix
 
 
 Time -  Count takes O(max(M,N)), binary search takes O(Lg(Maximum-Minimum))
-        O(max(M,N)) * O(Lg(Maximum-Minimum))
+        O((M+N) * O(Lg(Maximum-Minimum)) = O( (M+N)*Lg(Maximum-Minimum)   )
 Space - O(1)
 """
 

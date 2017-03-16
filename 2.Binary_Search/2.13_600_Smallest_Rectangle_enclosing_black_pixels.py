@@ -1,5 +1,5 @@
 """
-An image is represented by a binary matrix with 0 as a white pixel and 1 as a black pixel. The black pixels are connected, i.e., there is only one black region.
+An image is represented by a binary matrix with 0 as a white pixel and 1 as a black pixel.jiu The black pixels are connected, i.e., there is only one black region.
 Pixels are connected horizontally and vertically.
 Given the location (x, y) of one of the black pixels,
 return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
@@ -19,9 +19,17 @@ Return 6.
 
 Approach
 _________________________
-根据已有的black pixel的左边，分别找到上下左右含有1的边界，利用binary search查找。
-在discuss里有很pythonic的写法，可以学习一下。 这里我根据我记忆的binary search的模板进行了修改。 基本上就是利用search for a range的写法。
+Binary search
+++++++++++++
+Perform 4 binary searches to get 4 boundaries
+0. top boundary ---> rowwise to search for the first 1 (0 to x)
+1. bottom bounday ---> rowsie to earch for last 1 (x to end)
+2. left boundary ---> colwise to search for first 1 (0 to y)
+3. right boundaty ---> colwise to search for last 1 (y to end)
 
+Compleixty
+___________
+O(Lg(M*N))
 """
 
 
@@ -44,53 +52,53 @@ class Solution(object):
         return (right - left + 1) * (bottom - top + 1)
 
     def searchTop(self, image, start, end):
+        # Rowwise
+        # search for first position with start =0 and end as x
         while start + 1 < end:
             mid = start + (end - start) / 2
-            if ("1" in image[mid]) == True:
+            if '1' in image[mid]:
                 end = mid
             else:
                 start = mid
-        if ("1" in image[start]) == True:
+        if '1' in image[start]:
             return start
-        elif ("1" in image[end]) == True:
-            return end
         return end
 
     def searchBottom(self, image, start, end):
+        # RowWise
+        # search for last position with start as x and end as end of rows
         while start + 1 < end:
             mid = start + (end - start) / 2
-            if ("1" in image[mid]) == True:
+            if '1' in image[mid]:
                 start = mid
             else:
                 end = mid
-        if ("1" in image[end]) == True:
+        if '1' in image[end]:
             return end
-        elif ("1" in image[start]) == True:
-            return start
         return start
 
     def searchLeft(self, image, start, end):
+        # ColumnWise
+        # search for first position  with start as 0 and y as end
+
         while start + 1 < end:
             mid = start + (end - start) / 2
-            if any(image[k][mid] == "1" for k in range(len(image))) == True:
+            if '1' in [row[mid] for row in iamge]:
                 end = mid
             else:
                 start = mid
-        if any(image[k][start] == "1" for k in range(len(image))) == True:
+        if '1' in [row[start] for row in iamge]:
             return start
-        elif any(image[k][start] == "1" for k in range(len(image))) == True:
-            return end
         return end
 
     def searchRight(self, image, start, end):
         while start + 1 < end:
             mid = start + (end - start) / 2
-            if any(image[k][mid] == "1" for k in range(len(image))) == True:
+            if '1' in [row[mid] for row in iamge]:
                 start = mid
             else:
                 end = mid
-        if any(image[k][end] == "1" for k in range(len(image))) == True:
+
+        if '1' in [row[end] for row in image]:
             return end
-        elif any(image[k][start] == "1"for k in range(len(image))) == True:
-            return start
         return start

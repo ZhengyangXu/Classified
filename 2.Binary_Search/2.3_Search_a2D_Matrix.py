@@ -1,6 +1,6 @@
 """
 Description
-==========================
+____________________
 Write an efficient algorithm that searches for a value in an m x n matrix.
 
 This matrix has the following properties:
@@ -10,7 +10,7 @@ The first integer of each row is greater than the last integer of the previous r
 
 
 Example
-============================
+____________________
 Consider the following matrix:
 
 [
@@ -19,8 +19,12 @@ Consider the following matrix:
     [23, 30, 34, 50]
 ]
 Given target = 3, return true.
-================================
-Due to the constraint, this is can be flattened to a 1D sequence with equation
+
+Approach
+_________________
+Flattened binary search
++++++++++++++++++++++++
+Due to its properties, this is can be flattened to a 1D sequence with equation
 
 col*x + y = a
 x = a/col
@@ -28,10 +32,18 @@ y = a%col
 
 
 2 binary search is to
+++++++++++++++++++++++
+search column wise (0, j) find last position <= targret get j0
 
-search column wise find last position <= targret
+then search rowwise(i, j0) postion == target get i0
 
-then search rowwise first postion == target 
+return (i0, ij)
+
+
+Complexity
+____________
+Time - O(Lg(M*N))
+Space - O(1)
 """
 
 

@@ -14,6 +14,23 @@ sqrt(4) = 2
 sqrt(5) = 2
 
 sqrt(10) = 3
+
+Approach
+______________
+Binary Search
++++++++++++++++
+One Formulation
+++++++++++++++++++
+constraint: mid*mid <= target
+Goal : find the last index
+range: 0 - x
+
+Another Formulation
+++++++++++++++++++++
+Constraint: mid*mmid == target
+goal: if it exsits, return, if not, return the last index < target (this formulation
+can potentially save some iterations)
+range: 0 - x
 """
 
 class Solution:

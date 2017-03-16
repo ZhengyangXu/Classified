@@ -14,6 +14,24 @@ Example
 [1,3,5,6], 7 → 4
 
 [1,3,5,6], 0 → 0
+
+Approach
+______________
+Standard Binary search
+But be CAUTIONS ABOUT those three cases when not found
+
+    if target <= A[start]:
+        return start
+    elif target > A[end]:
+        return end + 1
+    else:
+        return end
+
+
+Complexity
+____________
+Time - O(Lg(N))
+Space - O(1)
 """
 
 

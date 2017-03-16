@@ -93,7 +93,7 @@ This is very similar to search in matrix
 
 
 Time -  Count takes O(max(M,N)), binary search takes O(Lg(Maximum-Minimum))
-        O(max(M,N)) * O(Lg(Maximum-Minimum))
+        O((M+N) * O(Lg(Maximum-Minimum))= O( (M+N)*Lg(Maximum-Minimum)   )
 Space - O(1)
 """
 

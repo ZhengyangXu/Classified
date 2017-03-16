@@ -15,7 +15,8 @@ Given [1, 3, 3, 4] and target = 2, return 0 or 1 or 2.
 
 Approach
 ________
-just a quick 
+just a quick binary search
+
 Compleixty
 _________
 Lg(N)
@@ -29,6 +30,8 @@ class Solution:
 
     def closestNumber(self, A, target):
         # Write your code here
+        if A is None or len(A) == 0:
+            return -1
         start, end = 0, len(A) - 1
         while start + 1 < end:
             mid = start + (end - start) / 2
