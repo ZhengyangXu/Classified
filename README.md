@@ -106,3 +106,7 @@
 * 7.11_57. [3Sum](7.Two_Pointers/7.11_57_3Sum.py)
 * 7.12_58. [4Sum](7.Two_Pointers/7.12_58_4Sum.py)
 * 7.13_31. [Partition_Array](7.Two_Pointers/7.13_31_Partition_Array.py)
+
+#### Ladder 8 -- Data Structure
+
+* 8.1_511. 
