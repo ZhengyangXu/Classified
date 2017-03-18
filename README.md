@@ -109,4 +109,19 @@
 
 #### Ladder 8 -- Data Structure
 
-* 8.1_511.
+* 8.1_511. [Nested_List_Weight_Sum](8.Data_Structure/8.1_511_Nested_List_Weight_Sum.py)
+* 8.2_128. [Hash_Function](8.Data_Structure/8.2_128_Hash_Function.py)
+* 8.3_613. [High_Five](8.Data_Structure/8.3_613_High_Five.py)
+* 8.4_612. [K_Closest_Points](8.Data_Structure/8.4_612_K_Closest_Points.py)
+* 8.5_5. [Kth_Largest_Element](8.Data_Structure/8.5_5_Kth_Largest_Element.py)
+* 8.6_606. [Kth_Largest_Element_II](8.Data_Structure/8.6_606_Kth_Largest_Element_II.py)
+* 8.7_401. [Kth_Smallest_Number_in_Sorted_Matrix.py](8.Data_Structure/8.7_401_Kth_Smallest_Number_in_Sorted_Matrix.py)
+* 8.8_544. [Top_K_Largest_Numbers](8.Data_Structure/8.8_544_Top_K_Largest_Numbers.py)
+* 8.9_545. [Top_K_Largest_Numbers_II](8.Data_Structure/8.9_545_Top_K_Largest_Numbers_II.py)
+* 8.10_129. [Rehashing](8.Data_Structure/8.10_129_Rehashing.py)
+* 8.11_104. [Merge_K_Sorted_Lists](8.Data_Structure/8.11_104_Merge_K_Sorted_Lists.py)
+* 8.11_486. [Merge_K_Sorted_Arrays](8.Data_Structure/8.11_486_Merge_K_Sorted_Arrays.py)
+* 8.12_518. [Ugly_Number_I](8.Data_Structure/8.12_518_Ugly_Number_I.py)
+* 8.13_4. [Ugly_Number_II](8.Data_Structure/8.13_4_Ugly_Number_II.py)
+* 8.14_594. [strStr_II](8.Data_Structure/8.14_594_strStr_II.py)
+* 8.15_134. [LRU_Cache](8.Data_Structure/8.15_134_LRU_Cache.py)
