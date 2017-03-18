@@ -26,7 +26,7 @@
 * 3.1. [Maximum_Depth_Binary_Tree](3.Binary_Tree & Divide and Conquer/3.1_Maximum_Depth_of_Binary_Tree.py)
 * 3.2. [Balanced_Binary_Tree](3.Binary_Tree & Divide and Conquer/3.2_Balanced_Binary_Tree.py)
 * 3.3. [Binary Tree Preorder Traversal](3.Binary_Tree & Divide and Conquer/3.3_Binary_Tree_Preorder_Traversal.py)
-* 3.5. [In_Order_Successor_in_Binary_Search_Tree](3.Binary_Tree & Divide and Conquer/3.5_In_Order_Successor_in_Binary_Search_Tree.py	)
+* 3.5. [In_Order_Successor_in_Binary_Search_Tree](3.Binary_Tree & Divide and Conquer/3.5_In_Order_Successor_in_Binary_Search_Tree.py)
 * 3.6. [Binary_Tree_Maximum_Path_Sum](3.Binary_Tree & Divide and Conquer/3.6_Binary_Tree_Maximum_Path_Sum.py	)
 * 3.4. [Binary_Tree_Maximum_Path_SumII](3.Binary_Tree & Divide and Conquer/3.4_Binary_Tree_Maximum_Path_SumII.py)
 * 3.8. [Binary_Tree_Level_Order_Traversal](3.Binary_Tree & Divide and Conquer/3.8_Binary_Tree_Level_Order_Traversal.py)
@@ -109,4 +109,4 @@
 
 #### Ladder 8 -- Data Structure
 
-* 8.1_511. 
+* 8.1_511.
