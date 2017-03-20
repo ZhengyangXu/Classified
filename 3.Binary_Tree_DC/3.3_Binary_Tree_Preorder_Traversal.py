@@ -14,6 +14,18 @@ class TreeNode:
     def __init__(self, val):
         this.val = val
         this.left, this.right = None, None
+
+Approach
+________
+
+See code
+
+Complexity
+__________
+N - number of nodes
+H - height of Tree
+Time - O(N)
+Space - o(H)
 """
 
 

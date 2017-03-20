@@ -26,9 +26,28 @@ Approach
 Divide conquer 遍历
 class variable to keep track of maxnode and maxavg
 
+Global maintain - maxNode, maxAvg
+Maintain - size, sum
+base - root is None, return 0 , 0
+
+Recursion and update
+
+    left_size, left_max = self.traverse_dc(root.left)
+    right_size, right_max = self.traverse_dc(root.right)
+
+    result_size = left_size + right_size + 1
+    result_max = left_max + right_max + root.val
+    result_avg = result_max * 1.0 / result_size
+    if self.maxAvg is None or self.maxAvg < result_avg:
+        self.maxNode = root
+        self.maxAvg = result_avg
+
 Complexity
 ___________
-O(N)
+N - number of nodes
+H - height of Tree
+Time - O(N)
+Space - o(H)
 """
 
 

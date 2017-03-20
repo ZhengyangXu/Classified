@@ -15,7 +15,24 @@ Given the below binary tree and sum = 22
 return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 
 Empty Leaf with one root does not count
+
+Approach
+___________
+Same thing as binary path sum 1
+Complexity
+_________
+N - number of nodes
+H - height of Tree
+Time - O(N)
+Space - O(H)
 """
+
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
 
 class Solution(object):
@@ -26,17 +43,17 @@ class Solution(object):
         :type sum: int
         :rtype: bool
         """
-        if root is None:
+        path = []
+        return self.dc_traverse(root,  0, sum)
+
+    def dc_traverse(self, node, cur, target):
+
+        if node is None:
             return False
-        sum -= root.val
-        if root.left is None and root.right is None:
-            if sum == 0:
-                return True
-            else:
-                return False
-        left, right = False, False
-        if root.left:
-            left = self.hasPathSum(root.left, sum)
-        if root.right:
-            right = self.hasPathSum(root.right, sum)
+        cur += node.val
+
+        if cur == target and not node.left and not node.right:
+            return True
+        left = self.dc_traverse(node.left, cur, target)
+        right = self.dc_traverse(node.right, cur, target)
         return left or right

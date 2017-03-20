@@ -24,13 +24,42 @@ The above binary tree is serialized as {2,1,4,#,#,3,5} (in level order).
 
 """
 Approach
-==========
-Divide and Conquer
+___________
+Recursive DQ
+++++++++++++
 A BT is BST if
 a. left tree is BST
 b. right tree is BST
 c. min of right tree > root value
 d. max value of left tree < root value
+
+So
+maintain - max, min, isBST
+base - -sys.maxint, sys.maxint, True
+recursion -
+
+    left_max, left_min, left_isBST = helper(root.left)
+    right_max, right_min, right_isBST = helper(root.right)
+
+    new_max = max(right_max, root.val)
+    new_min = min(left_min, root.val)
+
+    isBST = left_isBST and right_isBST and (left_max < root.val)
+            and (right_min > root.val)
+
+    return new_max, new_min, isBST
+
+
+
+"""
+
+
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
 """
 
 
@@ -42,22 +71,21 @@ class Solution:
 
     def isValidBST(self, root):
         # write your code here
+        is_bst, _, _ = self.validate(root)
+        return is_bst
+
+    def validate(self, root):
         import sys
+        if root is None:
+            # return is_bst, max, min
+            return True, -sys.maxint, sys.maxint
 
-        def helper(root):
-            # assume this retunrs max, min, isBST
-            if root == None:
-                return -sys.maxint - 1, sys.maxint, True
-            isBST = True
-            left_max, left_min, left_isBST = helper(root.left)
-            right_max, right_min, right_isBST = helper(root.right)
+        left_bst, left_max, left_min = self.validate(root.left)
+        right_bst, right_max, right_min = self.validate(root.right)
+        is_bst = False
+        if left_bst and right_bst and left_max < root.val and right_min > root.val:
+            is_bst = True
+        result_max = max(root.val, right_max)
+        result_min = min(left_min, root.val)
 
-            new_max = max(right_max, root.val)
-            new_min = min(left_min, root.val)
-
-            isBST = left_isBST and right_isBST and (left_max < root.val) and (right_min > root.val)
-
-            return new_max, new_min, isBST
-
-        _, _, isBST = helper(root)
-        return isBST
+        return is_bst, result_max, result_min

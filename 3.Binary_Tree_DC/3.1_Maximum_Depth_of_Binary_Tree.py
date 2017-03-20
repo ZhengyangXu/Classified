@@ -1,11 +1,10 @@
 """
 Description
-
-================
+________________
 Given a binary tree, find its maximum depth.
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 Example
-================
+__________________
 Example
 Given a binary tree as follow:
   1
@@ -14,6 +13,24 @@ Given a binary tree as follow:
    / \
   4   5
 The maximum depth is 3.
+
+Approach
+___________
+DQ
+
+Compleixty
+____________
+
+T(N) = 2T(N/2) + C
+Log(b,a) = 1
+c = 0
+so
+N - number of nodes
+H - height of Tree
+Time - O(N)
+Space - o(H)
+
+SOdepends on the Tree, if it's balanced Lg(N), otherwise O(N)
 """
 
 

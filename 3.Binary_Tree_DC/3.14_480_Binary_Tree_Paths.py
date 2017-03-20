@@ -38,25 +38,24 @@ class TreeNode:
 class Solution:
     # @param {TreeNode} root the root of the binary tree
     # @return {List[str]} all root-to-leaf paths
+
     def binaryTreePaths(self, root):
         # Write your code here
         result = []
-        path =[]
+        path = []
         self.dfs(root, path, result)
-        return [ '->'.join([str(i)for i in path]) for path in result]
+        return ['->'.join([str(i)for i in path]) for path in result]
+
     def dfs(self, node, path, result):
         if node == None:
             return
-
 
         path = path + [node.val]
 
         if node.left is None and node.right is None:
             result.append(path[:])
 
-
         self.dfs(node.left, path, result)
         self.dfs(node.right, path, result)
 
         path.pop()
-        

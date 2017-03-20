@@ -20,9 +20,6 @@ In case of binary search trees (BST), Inorder traversal gives nodes in non-decre
 Example: Inorder traversal for the above given figure is 4 2 5 1 3.
 
 
-Practice Inorder Traversal
-
-
 Preorder Traversal:
 
 Algorithm Preorder(tree)

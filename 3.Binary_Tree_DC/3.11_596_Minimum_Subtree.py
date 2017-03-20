@@ -18,11 +18,11 @@ return the node 1.
 
 Appraoch
 ___________
-Same as 3.11
+Same as 589
 
 Complexity
 ___________
-Same as 3.11
+Same as 589
 """
 
 """

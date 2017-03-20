@@ -15,6 +15,13 @@ For the following binary search tree, in-order traversal by using iterator is [1
 1      11
  \       \
   6       12
+
+
+Approach
+______________
+This solution is totally based upon in-order traversal
+see SUM0_Three_ways_of_traversal
+
 """
 
 """
@@ -52,4 +59,4 @@ class BSTIterator:
         node = self.cur
         if self.cur:
             self.cur = self.cur.right
-        return node 
+        return node

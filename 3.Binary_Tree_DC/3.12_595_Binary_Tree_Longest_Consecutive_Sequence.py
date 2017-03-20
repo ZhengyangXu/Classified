@@ -31,12 +31,36 @@ Longest consecutive sequence path is 2-3,not3-2-1, so return 2.
 
 Approach
 _______
+Recursive DQ
+++++++++++++++
 Similar to Binary_Tree_Path_Sum
 D&Q, keep track of
 general_max_length and max_from_root
+
+Maintain - maxlength(general_max_length, have at least one node)
+           maxRoot(max_from_root, have at least one node)
+
+Base - if None, return -sys.maxint, -sys.maxint or 0, 0
+(because nothing is smaller than 0 when counting length)
+
+Recursion -
+    left_fromRoot, left_max = self.dchelper(root.left)
+    right_fromRoot, right_max = self.dchelper(root.right)
+
+    # at length one
+    result_fromRoot, result_max = 1, 1
+    if root.left and root.left.val == root.val + 1:
+        result_fromRoot = max(result_fromRoot, left_fromRoot + 1)
+    if root.right and root.right.val == root.val + 1:
+        result_fromRoot = max(result_fromRoot, right_fromRoot + 1)
+    result_max = max(result_fromRoot, left_max, right_max)
+
 Complexity
 _________
-O(N)
+N - number of nodes
+H - height of Tree
+Time - O(N)
+Space - O(H)
 """
 # Definition for a binary tree node.
 # class TreeNode(object):
