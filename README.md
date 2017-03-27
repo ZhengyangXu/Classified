@@ -76,8 +76,8 @@
 * 5.9_121. [word_ladder_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.9_121_word_ladder_ii.py)
 * 5.10_107. [word_break](5.DFS&BackTracking/naive_dfs_and_its_dp/5.10_107_word_break.py)
 * 5.11_582. [word_break_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
-* 5.12_58. [4Sum](5.Two_Pointers/5.12_58_4Sum.py)
-* 5.13_L17.
+* 5.12_58. [4Sum](5.DFS&BackTracking/5.12_58_4Sum.py)
+* 5.13._L17. [Letter_Combinations_of_a_phone_number](5.DFS&BackTracking/5.13_L17_Letter_Combinations_of_a_phone_number.py)
 * 5.14_L22.
 * 5.15_L301.
 
