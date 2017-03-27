@@ -1,4 +1,4 @@
-## LintCode_Ladder @ **100**
+## LintCode_Ladder @ **112**
 
 #### Ladder 1 -- Coding Style
 
