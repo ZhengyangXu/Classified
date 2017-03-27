@@ -86,7 +86,7 @@
 * 6.2_599. [Insert Into a Cyclic Sorted list](6.LinkedList&Array/6.2_599_Insert_Into_a_Cyclic_Sorted_list.py)
 * 6.3_165. [Merge Two Soted List](6.LinkedList&Array/6.3_165_Merge_Two_Soted_List.py)
 * 6.4_138. [Subarray_Sum](6.LinkedList&Array/6.4_138_Subarray_Sum.py)
-* 6.4_138.
+* 6.4_L325. [Maximum_size_subarray_sum_equals_k](6.LinkedList&Array/6.4_L325_Maximum_size_subarray_sum_equals_k.py)
 * 6.6_139. [Subarray_Sum_Closest](6.LinkedList&Array/6.6_139_Subarray_Sum_Closest.py)
 * 6.5_41. [Maximum_Subarray](6.LinkedList&Array/6.5_41_Maximum_Subarray.py)
 * 6.7_106. [Copy_List_with_Random_Pointer](6.LinkedList&Array/6.7_106_Copy_List_with_Random_Pointer.py)
@@ -101,8 +101,8 @@
 * 7.2_521. [Remove_Duplicates_Numbers_in_Array](7.Two_Pointers/7.2_521_Remove_Duplicates_Numbers_in_Array.py)
 * 7.3_100. [Remove_Duplicates_from_Sorted_Array](7.Two_Pointers/7.3_100_Remove_Duplicates_from_Sorted_Array.py)
 * 7.4_101. [Remove_Duplicates_from_Sorted_Array_II](7.Two_Pointers/7.4_101_Remove_Duplicates_from_Sorted_Array_II.py)
-* 7.4_172.
-* 7.4_539.
+* 7.4_172. [Remove_Elements.py](7.Two_Pointers/7.4_101_Remove_Duplicates_from_Sorted_Array_II.py)
+* 7.4_539. [Move_Zeros.py](7.Two_Pointers/7.4_539_Move_Zeros.py)
 * 7.5_609. [Two_Sum-Less_Than_or_Equal_to_Target.py](7.Two_Pointers/7.5_609_Two_Sum-Less_Than_or_Equal_to_Target.py)
 * 7.6_608. [Two_Sum-Input_Array_is_Sorted.py](7.Two_Pointers/7.6_608_Two_Sum-Input_Array_is_Sorted.py)
 * 7.7_587. [Two_Sum-Unique_Pairs](7.Two_Pointers/7.7_587_Two_Sum-Unique_Pairs.py)
