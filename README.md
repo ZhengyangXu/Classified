@@ -143,5 +143,5 @@
 * 9.0_L161. [One_Edit_Distance](9.Dynamic_Programming/9.0_L161_One_Edit_Distance.py)
 * 9.1_L72. [Edit_Distance.py](9.Dynamic_Programming/9.1_L72_Edit_Distance.py)
 #### One_off
-* 1. [D&Q_L273_Integer_to_English_words](One_off/D&Q_L273_Integer_to_English_words.py)
-* 2. [L161](One_off/D&Q_L273_Integer_to_English_words.py)
+1. [D&Q_L273_Integer_to_English_words](One_off/D&Q_L273_Integer_to_English_words.py)
+2. [L161](One_off/D&Q_L273_Integer_to_English_words.py)
