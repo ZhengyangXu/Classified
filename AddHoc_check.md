@@ -1,3 +1,15 @@
+Two pointers
++4
 
-* check 2.2 two formulations
-* 
+dfs
++3
+
+data_structure
++2
+
+LinkedListArray
++1
+One_off
++1
+DP
++1

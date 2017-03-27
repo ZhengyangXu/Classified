@@ -20,6 +20,9 @@ For nums = [1,2,3], the permutations are:
 Approach
 __________
 DFS
+++++
+Connecting point at
+availale indexes of the whole array
 details see notes_for_dfs
 
 Complexity
