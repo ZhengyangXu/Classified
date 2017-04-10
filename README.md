@@ -94,7 +94,9 @@
 * 6.8_103. [Linked_List_Cycle_II](6.LinkedList&Array/6.8_103_Linked_List_Cycle_II.py)
 * 6.9_98. [Sort_List](6.LinkedList&Array/6.9_98_Sort_List.py)
 * 6.10_65. [Median_of_two_Sorted_arrays](6.LinkedList&Array/6.10_Median_of_sorted_Arrays.py)
-
+* 6.11_L237. [Delete_Node_in_LinkedList](6.LinkedList&Array/6.11_L237_Delete_Node_in_LinkedList.py)
+* 6.12_L206. [Reverse_Linked_List](6.LinkedList&Array/6.12_L206_Reverse_Linked_List.py)
+* 6.13_L445. [Add_Two_Numbers](6.LinkedList&Array/6.13_L445.Add_Two_Numbers.py)
 
 #### Ladder 7 -- Two Pointers
 * 7.1_607. [Two_Sum-DataStructure_Design](7.Two_Pointers/7.1_607_Two_Sum-DataStructure_Design.py)
@@ -114,6 +116,9 @@
 * 7.13_31. [Partition_Array](7.Two_Pointers/7.13_31_Partition_Array.py)
 * 7.14_L277. [Find_the_Celebrity](7.Two_Pointers/7.14_L277_Find_the_Celebrity.py)
 * 7.15_L67. [Add_binary](7.Two_Pointers/7.15_L67_Add_binary.py)
+* 7.16_L2. [Add_two_numbers](7.Two_Pointers/7.16_L2_Add_two_numbers.py)
+* 7.17_L445. [Add_Two_Numbers](7.Two_Pointers/7.17_L445.Add_Two_Numbers.py)
+* 7.18_L3. [Longest_Substring_without_Repeating_char](7.Two_Pointers/7.18_L3_Longest_Substring_without_Repeating_char.py)
 
 #### Ladder 8 -- Data Structure
 
@@ -137,11 +142,23 @@
 * 8.17_L32. [Longest_Valid_Parentheses](8.Data_Structure/8.17_L32_Longest_Valid_Parentheses.py)
 * 8.18_L252. [Meeting_Rooms](8.Data_Structure/8.18_L252_Meeting_Rooms.py)
 * 8.18_L253. [Meeting_Rooms_II](8.Data_Structure/8.18_L253_Meeting_Rooms_II.py)
+* 8.19_L6. [ZigZag_Conversion](8.Data_Structure/8.19_L6_ZigZag_Conversion.py)
+* 8.20_L155. [Min_Stack](8.Data_Structure/8.20_L155_Min_Stack.py)
 
 
-#### Ladder 8 -- Dynamic Programming
+#### Ladder 9 -- Dynamic Programming
 * 9.0_L161. [One_Edit_Distance](9.Dynamic_Programming/9.0_L161_One_Edit_Distance.py)
 * 9.1_L72. [Edit_Distance.py](9.Dynamic_Programming/9.1_L72_Edit_Distance.py)
+
+#### Ladder 10 -- Bit Manipulation 
+* 10.1_1. [Longest_Palindrome](9.Dynamic_Programming/10.1_1.Longest_Palindrome.py)
+* 10.2. [L136_Single_Number](9.Dynamic_Programming/10.2_L136_Single_Number.py)
+* 10.3_L371. [Sum_of_two_numbers](9.Dynamic_Programming/10.3_L371_Sum_of_two_numbers.py)
+* 10.4. [Substraction_of_two_numbers](9.Dynamic_Programming/10.4_Substraction_of_two_numbers.py)
+* 10.5_L191. [Number_of_1_Bits](9.Dynamic_Programming/10.5_L191_Number_of_1_Bits.pyy)
+* 10.6_L461. [Hamming_Distance](9.Dynamic_Programming/10.6_L461_Hamming_Distance.py)
+
+
 #### One_off
 1. [D&Q_L273_Integer_to_English_words](One_off/D&Q_L273_Integer_to_English_words.py)
 2. [L161](One_off/D&Q_L273_Integer_to_English_words.py)
