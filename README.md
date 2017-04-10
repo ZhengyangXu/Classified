@@ -76,17 +76,17 @@
 * 5.9_121. [word_ladder_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.9_121_word_ladder_ii.py)
 * 5.10_107. [word_break](5.DFS&BackTracking/naive_dfs_and_its_dp/5.10_107_word_break.py)
 * 5.11_582. [word_break_ii](5.DFS&BackTracking/naive_dfs_and_its_dp/5.11_582_word_break_ii.py)
-* 5.12_58. [4Sum](5.Two_Pointers/5.12_58_4Sum.py)
-* 5.13_L17.
-* 5.14_L22.
-* 5.15_L301.
+* 5.12_58. [4Sum](5.DFS&BackTracking/5.12_58_4Sum.py)
+* 5.13._L17. [Letter_Combinations_of_a_phone_number](5.DFS&BackTracking/5.13_L17_Letter_Combinations_of_a_phone_number.py)
+* 5.14_L22.[generate_parrentheses.py](5.DFS&BackTracking/5.14_L22_generate_parrentheses.py)
+* 5.15_L301.[Remove_Invalid_Parentheses](5.DFS&BackTracking/5.15_L301_Remove_Invalid_Parentheses.py)
 
 #### Ladder 6 -- LinkedList & Array
 * 6.1_60. [Window_Sum](6.LinkedList&Array/6.1_60_Window_Sum.py)
 * 6.2_599. [Insert Into a Cyclic Sorted list](6.LinkedList&Array/6.2_599_Insert_Into_a_Cyclic_Sorted_list.py)
 * 6.3_165. [Merge Two Soted List](6.LinkedList&Array/6.3_165_Merge_Two_Soted_List.py)
 * 6.4_138. [Subarray_Sum](6.LinkedList&Array/6.4_138_Subarray_Sum.py)
-* 6.4_138.
+* 6.4_L325. [Maximum_size_subarray_sum_equals_k](6.LinkedList&Array/6.4_L325_Maximum_size_subarray_sum_equals_k.py)
 * 6.6_139. [Subarray_Sum_Closest](6.LinkedList&Array/6.6_139_Subarray_Sum_Closest.py)
 * 6.5_41. [Maximum_Subarray](6.LinkedList&Array/6.5_41_Maximum_Subarray.py)
 * 6.7_106. [Copy_List_with_Random_Pointer](6.LinkedList&Array/6.7_106_Copy_List_with_Random_Pointer.py)
@@ -101,8 +101,8 @@
 * 7.2_521. [Remove_Duplicates_Numbers_in_Array](7.Two_Pointers/7.2_521_Remove_Duplicates_Numbers_in_Array.py)
 * 7.3_100. [Remove_Duplicates_from_Sorted_Array](7.Two_Pointers/7.3_100_Remove_Duplicates_from_Sorted_Array.py)
 * 7.4_101. [Remove_Duplicates_from_Sorted_Array_II](7.Two_Pointers/7.4_101_Remove_Duplicates_from_Sorted_Array_II.py)
-* 7.4_172.
-* 7.4_539.
+* 7.4_172. [Remove_Elements.py](7.Two_Pointers/7.4_101_Remove_Duplicates_from_Sorted_Array_II.py)
+* 7.4_539. [Move_Zeros.py](7.Two_Pointers/7.4_539_Move_Zeros.py)
 * 7.5_609. [Two_Sum-Less_Than_or_Equal_to_Target.py](7.Two_Pointers/7.5_609_Two_Sum-Less_Than_or_Equal_to_Target.py)
 * 7.6_608. [Two_Sum-Input_Array_is_Sorted.py](7.Two_Pointers/7.6_608_Two_Sum-Input_Array_is_Sorted.py)
 * 7.7_587. [Two_Sum-Unique_Pairs](7.Two_Pointers/7.7_587_Two_Sum-Unique_Pairs.py)
@@ -112,8 +112,8 @@
 * 7.11_57. [3Sum](7.Two_Pointers/7.11_57_3Sum.py)
 * 7.12_58. [4Sum](7.Two_Pointers/7.12_58_4Sum.py)
 * 7.13_31. [Partition_Array](7.Two_Pointers/7.13_31_Partition_Array.py)
-* 7.14_L277.
-* 7.15_L67.
+* 7.14_L277. [Find_the_Celebrity](7.Two_Pointers/7.14_L277_Find_the_Celebrity.py)
+* 7.15_L67. [Add_binary](7.Two_Pointers/7.15_L67_Add_binary.py)
 
 #### Ladder 8 -- Data Structure
 
@@ -133,15 +133,15 @@
 * 8.13_4. [Ugly_Number_II](8.Data_Structure/8.13_4_Ugly_Number_II.py)
 * 8.14_594. [strStr_II](8.Data_Structure/8.14_594_strStr_II.py)
 * 8.15_134. [LRU_Cache](8.Data_Structure/8.15_134_LRU_Cache.py)
-* 8.16_L20.
-* 8.17_L32.
-* 8.18_L252.
-* 8.18_L253.
+* 8.16_L20. [Valid_Parentheses](8.Data_Structure/8.16_L20_Valid_Parentheses.py)
+* 8.17_L32. [Longest_Valid_Parentheses](8.Data_Structure/8.17_L32_Longest_Valid_Parentheses.py)
+* 8.18_L252. [Meeting_Rooms](8.Data_Structure/8.18_L252_Meeting_Rooms.py)
+* 8.18_L253. [Meeting_Rooms_II](8.Data_Structure/8.18_L253_Meeting_Rooms_II.py)
 
 
 #### Ladder 8 -- Dynamic Programming
-* 9.0
-* 9.1
+* 9.0_L161. [One_Edit_Distance](9.Dynamic_Programming/9.0_L161_One_Edit_Distance.py)
+* 9.1_L72. [Edit_Distance.py](9.Dynamic_Programming/9.1_L72_Edit_Distance.py)
 #### One_off
-* D&Q
-* L161
+1. [D&Q_L273_Integer_to_English_words](One_off/D&Q_L273_Integer_to_English_words.py)
+2. [L161](One_off/D&Q_L273_Integer_to_English_words.py)
