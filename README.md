@@ -151,14 +151,17 @@
 * 9.1_L72. [Edit_Distance.py](9.Dynamic_Programming/9.1_L72_Edit_Distance.py)
 
 #### Ladder 10 -- Bit Manipulation 
-* 10.1_1. [Longest_Palindrome](9.Dynamic_Programming/10.1_1.Longest_Palindrome.py)
-* 10.2. [L136_Single_Number](9.Dynamic_Programming/10.2_L136_Single_Number.py)
-* 10.3_L371. [Sum_of_two_numbers](9.Dynamic_Programming/10.3_L371_Sum_of_two_numbers.py)
-* 10.4. [Substraction_of_two_numbers](9.Dynamic_Programming/10.4_Substraction_of_two_numbers.py)
-* 10.5_L191. [Number_of_1_Bits](9.Dynamic_Programming/10.5_L191_Number_of_1_Bits.pyy)
-* 10.6_L461. [Hamming_Distance](9.Dynamic_Programming/10.6_L461_Hamming_Distance.py)
+* 10.1_1. [Longest_Palindrome](10.bit_manipulation/10.1_1.Longest_Palindrome.py)
+* 10.2. [L136_Single_Number](10.bit_manipulation/10.2_L136_Single_Number.py)
+* 10.3_L371. [Sum_of_two_numbers](10.bit_manipulation/10.3_L371_Sum_of_two_numbers.py)
+* 10.4. [Substraction_of_two_numbers](10.bit_manipulation/10.4_Substraction_of_two_numbers.py)
+* 10.5_L191. [Number_of_1_Bits](10.bit_manipulation/10.5_L191_Number_of_1_Bits.pyy)
+* 10.6_L461. [Hamming_Distance](10.bit_manipulation/10.6_L461_Hamming_Distance.py)
 
 
 #### One_off
-1. [D&Q_L273_Integer_to_English_words](One_off/D&Q_L273_Integer_to_English_words.py)
-2. [L161](One_off/D&Q_L273_Integer_to_English_words.py)
+* 11.1_L292. [NimGame](One_off/11.1_L292_NimGame.py)
+* 11.2_D&Q_L273. [Integer_to_English_words](One_off/11.2_D&Q_L273_Integer_to_English_words.py)
+* 11.3_L13. [Roman_to_integer](One_off/11.3_L13_Roman_to_integer.py)
+* 11.4_L161. [One_edit_distance](One_off/11.4_L161_One_edit_distance.py)
+
