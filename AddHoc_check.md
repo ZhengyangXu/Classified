@@ -1,15 +1,23 @@
-Two pointers
-+4
-
-dfs
+Two Pointers
 +3
 
-data_structure
+LinkedList and Array
+
 +2
 
-LinkedListArray
-+1
+Data Structure
++2
+
+Amazon9
+
++3
+
+bit_mul
++5
+
 One_off
-+1
-DP
-+1
++2
+
+
+
+Total + 17

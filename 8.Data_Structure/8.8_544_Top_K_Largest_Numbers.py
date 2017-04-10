@@ -60,4 +60,4 @@ class Solution:
             result[index] = t
             index -= 1
 
-        return resultx
+        return result

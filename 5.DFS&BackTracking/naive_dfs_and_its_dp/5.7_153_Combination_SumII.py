@@ -54,4 +54,3 @@ class Solution:
                 self.dfs(i + 1, candidates, remain, res, branch)
                 branch.pop()
                 remain += candidates[i]
-```

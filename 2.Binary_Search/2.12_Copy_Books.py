@@ -25,7 +25,7 @@ A[0..i] - the first i ints (including i)
 prefix_sum - prefix_sum of A
 Dp [i][j] - the minimum of the maximum subarray for A[0..i] under j partitions
 
-DP[i][j] = for k<-0 to i min(DP[k][j-1],prefix_sum[i]-prefix_sum[k])
+DP[i][j] = for k<-0 to i min( max(DP[k][j-1],prefix_sum[i]-prefix_sum[k]))
 
 Binary search
 +++++++++++++++

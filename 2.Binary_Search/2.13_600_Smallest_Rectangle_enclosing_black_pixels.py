@@ -83,18 +83,18 @@ class Solution(object):
 
         while start + 1 < end:
             mid = start + (end - start) / 2
-            if '1' in [row[mid] for row in iamge]:
+            if '1' in [row[mid] for row in image]:
                 end = mid
             else:
                 start = mid
-        if '1' in [row[start] for row in iamge]:
+        if '1' in [row[start] for row in image]:
             return start
         return end
 
     def searchRight(self, image, start, end):
         while start + 1 < end:
             mid = start + (end - start) / 2
-            if '1' in [row[mid] for row in iamge]:
+            if '1' in [row[mid] for row in image]:
                 start = mid
             else:
                 end = mid

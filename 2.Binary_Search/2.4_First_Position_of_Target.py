@@ -25,11 +25,11 @@ class Solution:
     # @return the first position of target in nums, position start from 0
     def binarySearch(self, nums, target):
         # write your code here
-        if nums == None or len(nums) ==0:
+        if nums == None or len(nums) == 0:
             return -1
         start, end = 0, len(nums) - 1
         while start + 1 < end:
-            mid = start + (end - start)/2
+            mid = start + (end - start) / 2
             if nums[mid] == target:
                 end = mid
             elif nums[mid] < target:
