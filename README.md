@@ -41,7 +41,7 @@
 * 3.17. [Balanced_Binary_Tree](3.Binary_Tree_DC/3.17_Balanced_Binary_Tree.py)
 * 3.18. [7/18/19 Three LCA Problems](3.Binary_Tree_DC/LCA/)
 * 3.19. [Summary 0--Three ways of traversal](3.Binary_Tree_DC/SUM0_three_ways_of_traversal.py)
-
+* 3.20. [L266_Invert_Binary_Tree](3.Binary_Tree_DC/3.18_L266_Invert_Binary_Tree.py)
 #### Ladder 4 -- BFS
 * 4.1_433. [Number_of_Islands](4.BFS/4.1_433_Number_of_Islands.py)
 * 4.2_618. [Search Graph nodes](4.BFS/4.2_618_Search_Graph_nodes.py)
@@ -97,7 +97,8 @@
 * 6.11_L237. [Delete_Node_in_LinkedList](6.LinkedList&Array/6.11_L237_Delete_Node_in_LinkedList.py)
 * 6.12_L206. [Reverse_Linked_List](6.LinkedList&Array/6.12_L206_Reverse_Linked_List.py)
 * 6.13_L445. [Add_Two_Numbers](6.LinkedList&Array/6.13_L445.Add_Two_Numbers.py)
-
+* 6.14_L238. [Product_of_array_except_self](6.LinkedList&Array/6.14_L238_Product_of_array_except_self.py)
+* 6.15_L328. [Odd_even_List] (6.LinkedList&Array/6.15_L328_Odd_even_List.py)
 #### Ladder 7 -- Two Pointers
 * 7.1_607. [Two_Sum-DataStructure_Design](7.Two_Pointers/7.1_607_Two_Sum-DataStructure_Design.py)
 * 7.2_521. [Remove_Duplicates_Numbers_in_Array](7.Two_Pointers/7.2_521_Remove_Duplicates_Numbers_in_Array.py)
@@ -119,7 +120,12 @@
 * 7.16_L2. [Add_two_numbers](7.Two_Pointers/7.16_L2_Add_two_numbers.py)
 * 7.17_L445. [Add_Two_Numbers](7.Two_Pointers/7.17_L445.Add_Two_Numbers.py)
 * 7.18_L3. [Longest_Substring_without_Repeating_char](7.Two_Pointers/7.18_L3_Longest_Substring_without_Repeating_char.py)
-
+* 7.20_L121. [Best_Time_to_buy_and_sell_stock](7.Two_Pointers/7.20_L121_Best_Time_to_buy_and_sell_stock.py)
+* 7.22_L123. [Best_Time_To_buy_and_sell_Stock_III](7.Two_Pointers/7.22_L123_Best_Time_To_buy_and_sell_Stock_III.py)
+* 7.23_L188. [Best_Time_to_Buy_and_Sell_Stock_IV](7.Two_Pointers/7.23_L188_Best_Time_to_Buy_and_Sell_Stock_IV.py)
+* 7.24_L66. [Plus_One](7.Two_Pointers/7.24_L66_Plus_One.py)
+* 7.25_L14. [Longest_common_prefix](7.Two_Pointers/7.25_L14_Longest_common_prefix.py)
+* 7.26_L42. [Trapping_Rain_Water](7.Two_Pointers/7.26_L42_Trapping_Rain_Water.py)
 #### Ladder 8 -- Data Structure
 
 * 8.1_511. [Nested_List_Weight_Sum](8.Data_Structure/8.1_511_Nested_List_Weight_Sum.py)
@@ -144,11 +150,17 @@
 * 8.18_L253. [Meeting_Rooms_II](8.Data_Structure/8.18_L253_Meeting_Rooms_II.py)
 * 8.19_L6. [ZigZag_Conversion](8.Data_Structure/8.19_L6_ZigZag_Conversion.py)
 * 8.20_L155. [Min_Stack](8.Data_Structure/8.20_L155_Min_Stack.py)
+* 8.21_L388. [Longest_Absolute_File_Path](8.Data_Structure/8.21_L388_Longest_Absolute_File_Path.py)
+* 8.22_L42. [Trapping_Rain_Water](8.Data_Structure/8.22_L42_Trapping_Rain_Water.py)
+* 8.23_L84. [Largest_Rectangle_in_Histogram] (8.Data_Structure/8.23_Largest_Rectangle_in_Histogram.py)
 
 
 #### Ladder 9 -- Dynamic Programming
 * 9.0_L161. [One_Edit_Distance](9.Dynamic_Programming/9.0_L161_One_Edit_Distance.py)
 * 9.1_L72. [Edit_Distance.py](9.Dynamic_Programming/9.1_L72_Edit_Distance.py)
+* 9.2_L188. [Best_Time_to_Buy_and_Sell_Stock_IV](9.Dynamic_Programming/9.2_L188_Best_Time_to_Buy_and_Sell_Stock_IV.py
+* 9.3_L70. [Climbing_stairs](9.Dynamic_Programming/9.3_70_Climbing_stairs.py)
+* 9.4_L198. [House_Robber](9.Dynamic_Programming/9.4_L198_House_Robber.py)
 
 #### Ladder 10 -- Bit Manipulation 
 * 10.1_1. [Longest_Palindrome](10.bit_manipulation/10.1_1.Longest_Palindrome.py)
@@ -158,10 +170,14 @@
 * 10.5_L191. [Number_of_1_Bits](10.bit_manipulation/10.5_L191_Number_of_1_Bits.pyy)
 * 10.6_L461. [Hamming_Distance](10.bit_manipulation/10.6_L461_Hamming_Distance.py)
 
-
+#### Ladder11 -- General DQ
+* 11.1_L38. [Count_and_Say](11.General_DQ/11.1_L38_Count_and_Say.py)
+* 11.2_L273. [Integer_to_English_words](11.General_DQ/11.2_L273_Integer_to_English_words.py)
 #### One_off
-* 11.1_L292. [NimGame](One_off/11.1_L292_NimGame.py)
-* 11.2_D&Q_L273. [Integer_to_English_words](One_off/11.2_D&Q_L273_Integer_to_English_words.py)
-* 11.3_L13. [Roman_to_integer](One_off/11.3_L13_Roman_to_integer.py)
-* 11.4_L161. [One_edit_distance](One_off/11.4_L161_One_edit_distance.py)
+* 1_L292. [NimGame](One_off/1_L292_NimGame.py)
+* 3_L13. [Roman_to_integer](One_off/2_L13_Roman_to_integer.py)
+* 4_L161. [One_edit_distance](One_off/3_L161_One_edit_distance.py)
+* 5_L169. [Majority_Element](One_off/4_L169_Majority_Element.py)
+* 6_L7. [Reverse_Integer](One_off/5_L7_Reverse_Integer.py)
+
 
