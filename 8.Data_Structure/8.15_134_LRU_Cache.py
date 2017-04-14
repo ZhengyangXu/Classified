@@ -220,3 +220,87 @@ class LRUCache:
             else:
                 self.sethead(new_node)
             self.map[key] = new_node
+
+
+# Leetcode Version
+class ListNode(object):
+
+    def __init__(self, k, v):
+        self.v = (k, v)
+        self.child = None
+        self.parent = None
+
+
+class LRUCache(object):
+
+    def __init__(self, capacity):
+        """
+        :type capacity: int
+        """
+        self.head = None
+        self.tail = None
+        self.capacity = capacity
+        self.map = {}
+
+    def remove(self, node):
+        if node.parent:
+            node.parent.child = node.child
+        else:
+            self.head = node.child
+        if node.child:
+            node.child.parent = node.parent
+        else:
+            self.tail = node.parent
+
+    def sethead(self, node):
+        node.parent = None
+        node.child = self.head
+        if self.head:
+            self.head.parent = node
+        self.head = node
+        if self.tail is None:
+            self.tail = self.head
+
+    def get(self, key):
+        """
+        :type key: int
+        :rtype: int
+        """
+        # print key, self.map.keys(), self.capacity
+        if key in self.map:
+            node = self.map[key]
+            self.remove(node)
+            self.sethead(node)
+            # print "==>", self.tail.v
+            return node.v[1]
+
+        else:
+            return -1
+
+    def put(self, key, value):
+        """
+        :type key: int
+        :type value: int
+        :rtype: void
+        """
+        if key in self.map:
+            node = self.map[key]
+            node.v = (key, value)
+            self.remove(node)
+            self.sethead(node)
+        else:
+            new_node = ListNode(key, value)
+            if len(self.map) >= self.capacity:
+                self.map.pop(self.tail.v[0])
+                self.remove(self.tail)
+                self.sethead(new_node)
+
+            else:
+                self.sethead(new_node)
+            self.map[key] = new_node
+
+
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)

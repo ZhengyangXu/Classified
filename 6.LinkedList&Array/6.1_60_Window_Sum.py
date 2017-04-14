@@ -8,7 +8,7 @@ find the sum of the element inside the window at each moving.
 Approach
 ____________
 The naive approach is to scan through an every time re-calcuate k elements'
-sum. This costs us O(KM)
+sum. This costs us O(KM) 
 
 A btter approach is to loop through and when we calcuate the current window sum
 Do new_sum = old_sum + (nums[old_last+1] - nums[old_first])

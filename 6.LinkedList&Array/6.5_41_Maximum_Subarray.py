@@ -84,5 +84,4 @@ class Solution:
             if s < 0:
                 start = i + 1
                 s = 0
-        print start
         return maximum

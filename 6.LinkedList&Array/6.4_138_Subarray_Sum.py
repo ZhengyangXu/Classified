@@ -6,7 +6,7 @@ Your code should return the index of the first number and the index of the last 
 
 Example
 _______________________________________________
-Given [-3, 1, 2, -3, 4], return [0, 2] or [1, 3].
+Given [-3, 1, 2, -3, 4], return [0, 2] or [1, 3]. 
 
 Approach
 ________________________________________
