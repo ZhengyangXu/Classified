@@ -10,7 +10,7 @@ find - Find if there exists any pair of numbers which sum is equal to the value.
 # twoSum = TwoSum()
 # twoSum.add(number)
 # twoSum.find(value)
-
+ 
 Example
 _________
 add(1); add(3); add(5);

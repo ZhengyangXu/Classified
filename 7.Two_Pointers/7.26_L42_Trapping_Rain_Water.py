@@ -35,7 +35,7 @@ when leftmax < rightmax:
 similar to rightmax > leftmax
 
 """
-
+ 
 
 class Solution(object):
 

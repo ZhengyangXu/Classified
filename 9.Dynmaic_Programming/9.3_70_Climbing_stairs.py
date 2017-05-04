@@ -12,10 +12,10 @@ Same as fibancii
 Complexity
 ____________
 Time - T(N)
-Space - O(N) 
+Space - O(N)
 """
 
-
+ 
 class Solution(object):
 
     def climbStairs(self, n):

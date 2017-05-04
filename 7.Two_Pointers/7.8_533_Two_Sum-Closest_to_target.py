@@ -21,7 +21,7 @@ Time - O(N.Log(N))
 Space - O(1)
 """
 
-
+ 
 class Solution:
     # @param {int[]} nums an integer array
     # @param {int} target an integer

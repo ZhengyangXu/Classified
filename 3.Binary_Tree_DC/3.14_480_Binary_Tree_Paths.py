@@ -43,7 +43,7 @@ class Solution:
         # Write your code here
         result = []
         path = []
-        self.dfs(root, path, result)
+        self.dfs(root, path, result) 
         return ['->'.join([str(i)for i in path]) for path in result]
 
     def dfs(self, node, path, result):

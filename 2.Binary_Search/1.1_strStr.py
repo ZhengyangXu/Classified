@@ -34,7 +34,7 @@ Space - O(1)
 """
 
 
-class Solution:
+class Solution: 
 
     def strStr(self, source, target):
         # write your code here

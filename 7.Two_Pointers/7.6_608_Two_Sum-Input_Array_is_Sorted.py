@@ -31,7 +31,7 @@ class Solution:
     @param target {int} = nums[index1] + nums[index2]
     @return {int[]} [index1 + 1, index2 + 1] (index1 < index2)
     """
-
+ 
     def twoSum(self, nums, target):
         # Write your code here
         if nums is None or len(nums) == 0:

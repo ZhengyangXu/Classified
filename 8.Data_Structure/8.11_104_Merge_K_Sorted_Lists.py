@@ -65,7 +65,7 @@ class T:
     def __cmp__(self, other):
         return self.node.val - other.node.val
 
-
+ 
 class Solution:
     """
     @param lists: a list of ListNode

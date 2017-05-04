@@ -22,7 +22,7 @@ Binary Search
 v - current version
 
 range: 0 - n
-Constraint: isbad(v) == true
+Constraint: isbad(v) == true 
 Goal : find the frist one
 
 """

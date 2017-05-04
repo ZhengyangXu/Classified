@@ -47,7 +47,7 @@ class Solution:
             two = two.next.next
         mid = one.next
         one.next = None
-
+ 
         left = self.sortList(head)
         right = self.sortList(mid)
         return self.merge(left, right)

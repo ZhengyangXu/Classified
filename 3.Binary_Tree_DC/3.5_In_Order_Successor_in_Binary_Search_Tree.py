@@ -78,7 +78,7 @@ class Solution(object):
 
         if p.right != None:
             p = p.right
-            while (p.left != None):
+            while p.left:
                 p = p.left
 
             return p

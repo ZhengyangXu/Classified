@@ -63,7 +63,7 @@ class Solution:
         q.append(node)
         new_node = UndirectedGraphNode(node.label)
         copiedMap[node] = new_node
-
+ 
         while q:
             cur = q.popleft()
             # print cur.label, [i.label for i in cur.neighbors], [i.label for i in copiedMap.keys()]

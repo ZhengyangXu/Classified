@@ -41,7 +41,7 @@ class T:
             return other.point.x - self.point.x
         return other.point.y - self.point.y
 
-
+ 
 class Solution:
     # @param {Pint[]} points a list of points
     # @param {Point} origin a point

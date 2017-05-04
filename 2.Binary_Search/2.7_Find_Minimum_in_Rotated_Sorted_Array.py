@@ -24,7 +24,7 @@ Goal: find the first position
 Notice we donot use first position of nums[mid] <= nums[0] because when
 it's not rotated, it does not work
 
-Compleixty
+Compleixty 
 ____________
 Time - O(Lg(N))
 Space - O(1)

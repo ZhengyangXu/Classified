@@ -40,7 +40,7 @@ class Solution:
         indegrees = defaultdict(int)
 
         q = deque()
-        count = 0
+        count = 0 
         [indegrees[i] for i in xrange(numCourses)]
         for i, o in prerequisites:
             edges[o].append(i)

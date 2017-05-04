@@ -54,7 +54,7 @@ class Solution:
     @return a boolean, indicate whether matrix contains target
     """
 
-    def searchMatrix(self, matrix, target):
+    def searchMatrix(self, matrix, target): 
         # write your code here
         if matrix == None or len(matrix) == 0 or matrix[0] == None or len(matrix[0]) == 0:
             return False

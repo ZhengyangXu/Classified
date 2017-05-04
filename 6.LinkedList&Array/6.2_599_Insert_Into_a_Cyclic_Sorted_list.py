@@ -4,7 +4,7 @@ _________________
 Given a node from a cyclic linked list which has been sorted,
 write a function to insert a value into the list such that it remains a cyclic sorted list.
 The given node can be any single node in the list.
-Return the inserted new node. 
+Return the inserted new node.
 
 Example
 ________________
@@ -40,7 +40,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 """
-
+  
 
 class Solution:
     # @param {ListNode} node a list node in the list

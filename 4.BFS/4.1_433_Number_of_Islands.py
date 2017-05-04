@@ -39,7 +39,7 @@ class Solution:
             return 0
         n = len(grid[0])
         if n == 0:
-            return 0
+            return 0 
         count = 0
         for i in xrange(m):
             for j in xrange(n):

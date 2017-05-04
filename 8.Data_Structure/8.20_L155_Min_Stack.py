@@ -25,7 +25,7 @@ ________________
 The key is to maintain  tuples of (value, the min value the time when that tuple
 got put on the stack) on a stack
 """
-
+ 
 
 class MinStack(object):
 

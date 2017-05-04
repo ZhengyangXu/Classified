@@ -3,9 +3,9 @@ Description
 ______________
 Given a binary tree, find the length of the longest consecutive sequence path.
 
-The path refers to any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The longest consecutive path need to be from parent to child (cannot be the reverse).
+The path refers to any sequence of nodes from some starting node to any node in the tree along the parent-child connections.
+The longest consecutive path need to be from parent to child (cannot be the reverse).
 
-Have you met this question in a real interview? Yes
 
 Example
 _____________
@@ -88,7 +88,7 @@ class Solution:
 
         result_fromRoot, result_max = 1, 1
         if root.left and root.left.val == root.val + 1:
-            result_fromRoot = max(result_fromRoot, left_fromRoot + 1)
+            result_fromRoot = left_fromRoot + 1
         if root.right and root.right.val == root.val + 1:
             result_fromRoot = max(result_fromRoot, right_fromRoot + 1)
         result_max = max(result_fromRoot, left_max, right_max)

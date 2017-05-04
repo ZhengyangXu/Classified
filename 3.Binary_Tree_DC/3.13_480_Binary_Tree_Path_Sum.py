@@ -59,7 +59,7 @@ class TreeNode:
 """
 
 
-class Solution:
+class Solution: 
     # @param {TreeNode} root the root of binary tree
     # @param {int} target an integer
     # @return {int[][]} all valid paths

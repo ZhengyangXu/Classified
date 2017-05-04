@@ -31,7 +31,7 @@ This translates to an efficient approach we
 a. first loop through one time to set all diagonal (length 1) to be True
 b. Then we loop through one time to check length 2
 c. we check length 3 to n substrings (j-i = 2)
-
+ 
 
 II. Then we use isPalindrome Matrix to solve DP[i] where returns how many minimum cuts S[:i](inclusion)
 need to partition palindrome

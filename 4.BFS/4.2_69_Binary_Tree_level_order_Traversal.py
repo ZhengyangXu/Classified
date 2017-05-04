@@ -12,7 +12,7 @@ Given binary tree {3,9,20,#,#,15,7},
   9  20
     /  \
    15   7
-
+ 
 Approach
 ____________________
 standard BFS approach

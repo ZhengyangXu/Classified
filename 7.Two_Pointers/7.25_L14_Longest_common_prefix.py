@@ -26,3 +26,4 @@ class Solution(object):
                 j += 1
             prefix = prefix[:j]
         return prefix
+ 

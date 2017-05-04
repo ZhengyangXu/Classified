@@ -33,7 +33,7 @@ There are four situations
     else:
         start = mid
 
-Complexity
+Complexity 
 ___________
 
 Time - O(Lg(N))

@@ -45,7 +45,7 @@ two pointers
     for i in xrange(n):
         if i != left and (knows(left, i) or not knows(i, left)):
             return -1
-
+ 
 Complexity
 _______________
 Time - O(N)

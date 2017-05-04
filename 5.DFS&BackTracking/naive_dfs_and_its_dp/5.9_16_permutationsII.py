@@ -27,7 +27,7 @@ class Solution
     @param nums: A list of integers.
     @return: A list of unique permutations.
     """
-
+ 
     def permuteUnique(self, nums):
         # write your code here
         result, branch, visited = [], [], [False for _ in xrange(len(nums))]

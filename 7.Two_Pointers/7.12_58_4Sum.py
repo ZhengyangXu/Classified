@@ -18,7 +18,7 @@ Time - O(N^k-1)
 Space - O(K)
 
 """
-
+ 
 
 class Solution:
     """

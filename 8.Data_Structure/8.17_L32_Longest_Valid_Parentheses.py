@@ -26,7 +26,7 @@ Loop through the string
             maxlen = max(maxlen, i - stack[-1]) ( since poped one off, the top is one before the match)
 return maxlen
 """
-
+ 
 
 class Solution(object):
 

@@ -15,10 +15,10 @@ ___________
 Binary Searches
 +++++++++++++++
 Do a binary search to find the first position
-Do a binary search to find the last position 
+Do a binary search to find the last position
 """
 
-
+ 
 class Solution:
     """
     @param A : a list of integers

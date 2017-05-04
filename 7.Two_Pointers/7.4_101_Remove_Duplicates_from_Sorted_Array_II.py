@@ -3,7 +3,7 @@ Description
 __________________________
 Follow up for "Remove Duplicates":
 What if duplicates are allowed at most twice?
-
+ 
 For example,
 Given sorted array A = [1,1,1,2,2,3],
 

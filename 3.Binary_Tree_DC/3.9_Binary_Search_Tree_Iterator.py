@@ -20,7 +20,7 @@ For the following binary search tree, in-order traversal by using iterator is [1
 Approach
 ______________
 This solution is totally based upon in-order traversal
-see SUM0_Three_ways_of_traversal
+see SUM0_Three_ways_of traversal
 
 """
 

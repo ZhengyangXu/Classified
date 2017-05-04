@@ -53,7 +53,7 @@ class Solution(object):
         for i in nestedinteger.getList():
             result += self.getSum(i, level + 1)
         return result
-
+ 
 # Version 2
 class Solution(object):
     # @param {NestedInteger[]} nestedList a list of NestedInteger Object

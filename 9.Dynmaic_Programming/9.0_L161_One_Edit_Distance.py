@@ -23,7 +23,7 @@ Space - O(1)
 
 
 class Solution(object):
-
+ 
     def isOneEditDistance(self, s, t):
         """
         :type s: str

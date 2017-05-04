@@ -57,7 +57,7 @@ class Solution:
             for j in xrange(n):
                 if grid[i][j] == 1:
                     q.append((i, j))
-
+  
         while q:
             size = len(q)
             for i in xrange(size):

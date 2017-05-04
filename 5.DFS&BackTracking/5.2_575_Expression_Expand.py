@@ -70,7 +70,7 @@ class Solution:
 
 # Version 2 -- Stack
 
-
+ 
 class Solution:
     # @param {string} s  an expression includes numbers, letters and brackets
     # @return {string} a string

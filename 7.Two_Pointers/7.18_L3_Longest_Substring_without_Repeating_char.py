@@ -28,7 +28,7 @@ ______________
 Time - O(N)
 Space - O(N)
 """
-
+ 
 class Solution(object):
 
     def lengthOfLongestSubstring(self, s):

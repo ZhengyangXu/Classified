@@ -44,7 +44,7 @@ class Solution:
         S = sorted(S)
         self.dfs(S, 0, result, [])
         return result
-
+ 
     def dfs(self, S, start, result, branch):
         result.append(branch[:])
         for i in xrange(start, len(S)):

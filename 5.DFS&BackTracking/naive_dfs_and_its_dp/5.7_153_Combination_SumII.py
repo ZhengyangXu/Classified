@@ -22,8 +22,7 @@ A solution set is:
 ]
 
 """
-
-
+ 
 class Solution:
     """
     @param candidates: Given the candidate numbers

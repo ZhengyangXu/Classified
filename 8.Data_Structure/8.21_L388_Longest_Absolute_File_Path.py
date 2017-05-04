@@ -66,7 +66,7 @@ it will NOT be /root....  but root....., that's why - 1
 complexity
 """
 
-
+ 
 class Solution(object):
 
     def lengthLongestPath(self, input):

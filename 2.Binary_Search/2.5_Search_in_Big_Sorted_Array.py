@@ -47,7 +47,7 @@ class Solution:
         while target > reader.get(end):
             end = end * 2 + 1
 
-        while start + 1 < end:
+        while start + 1 < end: 
             mid = start + (end - start) / 2
             mid_value = reader.get(mid)
             if mid_value == target:

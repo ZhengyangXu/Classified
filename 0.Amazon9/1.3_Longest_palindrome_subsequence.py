@@ -15,7 +15,7 @@ DP[i][j] - longest subsequence between S[i:j+1]
              edge when i+1 > j-1, DP[i][j] = 2
         else:
             DP[i][j] = max(DP[i-1][j], DP[i+1][j])
-Complexity
+Complexity 
 __________
 Time - O(N^2)
 Space - O(N^2)

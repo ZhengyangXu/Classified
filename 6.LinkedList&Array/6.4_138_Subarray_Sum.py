@@ -6,7 +6,7 @@ Your code should return the index of the first number and the index of the last 
 
 Example
 _______________________________________________
-Given [-3, 1, 2, -3, 4], return [0, 2] or [1, 3]. 
+Given [-3, 1, 2, -3, 4], return [0, 2] or [1, 3].
 
 Approach
 ________________________________________
@@ -37,7 +37,7 @@ class Solution:
     @return: A list of integers includes the index of the first number
              and the index of the last number
     """
-
+ 
     def subarraySum(self, nums):
         # write your code here
         prefix_sum = {0: -1}

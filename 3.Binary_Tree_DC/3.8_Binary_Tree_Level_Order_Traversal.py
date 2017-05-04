@@ -56,7 +56,7 @@ class Solution:
             return []
         from collections import deque
         q, result = deque(), []
-        q.append(root)
+        q.append(root) 
         while q:
             level = []
             size = len(q)

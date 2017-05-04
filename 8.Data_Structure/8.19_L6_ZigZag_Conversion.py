@@ -12,7 +12,7 @@ Write the code that will take a string and make this conversion given a number
 of rows: string convert(string text, int nRows);
 
 convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
-
+ 
 Approach
 __________________
 If we can have a matrix representation of whole it zigzaged, it can be solved

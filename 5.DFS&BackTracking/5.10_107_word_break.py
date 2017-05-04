@@ -54,7 +54,7 @@ class Solution:
     #                 break
     #         DP[i] = flag
     #     return DP[len(s)]
-
+ 
     def wordBreak(self, s, dict):
         if len(dict) == 0:
             return len(s) == 0

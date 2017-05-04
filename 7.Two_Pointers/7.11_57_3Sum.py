@@ -44,7 +44,7 @@ class Solution:
             return []
         numbers.sort()
         result = []
-
+ 
         for i in xrange(len(numbers) - 3 + 1):
             if i != 0 and numbers[i] == numbers[i - 1]:
                 continue

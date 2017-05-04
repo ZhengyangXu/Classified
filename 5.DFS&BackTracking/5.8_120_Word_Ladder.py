@@ -15,7 +15,7 @@ end = "cog"
 dict = ["hot","dot","dog","lot","log"]
 As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
 return its length 5.
-
+ 
 Approach
 ________________________
 Translate this to a graph search problem.

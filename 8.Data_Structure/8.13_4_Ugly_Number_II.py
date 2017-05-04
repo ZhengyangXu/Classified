@@ -8,7 +8,7 @@ The first 10 ugly numbers are 1, 2, 3, 4, 5, 6, 8, 9, 10, 12...
 Example
 If n=9, return 10.
 
-
+ 
 Approach
 __________
 heap + BFS

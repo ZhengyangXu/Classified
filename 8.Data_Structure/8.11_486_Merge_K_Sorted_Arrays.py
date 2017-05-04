@@ -35,7 +35,7 @@ class T:
 
     def __cmp__(self, other):
         return self.l[0] > other.l[0]
-
+ 
 
 class Solution:
     # @param {int[][]} arrays k sorted integer arrays

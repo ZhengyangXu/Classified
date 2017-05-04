@@ -8,11 +8,11 @@ Example
 _____________
 Given [-3, 1, 1, -3, 5],
 return [0, 2], [1, 3], [1, 1], [2, 2] or [0, 4].
-
+ 
 Approach
 _____________
 0. get dictionary
-key(prefix_sum)->index O(N) 
+key(prefix_sum)->index O(N)
 1. sort the dictionaries key O(N)
 2. get closest two key and return corresponding indexes (also need to sort)
 

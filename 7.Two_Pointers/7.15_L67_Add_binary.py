@@ -16,7 +16,7 @@ while index1 >=0 or index2 >=0 or carry:
         new_node = cur1 + cur2 + carry %2
         carry = carry + cur1 + cur2 /2
 
-
+ 
 Complexity
 _______________
 Time - O(N)

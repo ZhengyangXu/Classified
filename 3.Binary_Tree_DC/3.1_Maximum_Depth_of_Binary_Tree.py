@@ -20,7 +20,7 @@ DQ
 
 Compleixty
 ____________
-
+ 
 T(N) = 2T(N/2) + C
 Log(b,a) = 1
 c = 0

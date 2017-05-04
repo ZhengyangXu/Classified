@@ -53,7 +53,7 @@ has_next has to be called before using next
 #        @return {NestedInteger[]} the nested list that this NestedInteger holds,
 #        if it holds a nested list
 #        Return None if this NestedInteger holds a single integer
-#        """
+#        """ 
 
 class NestedIterator(object):
 

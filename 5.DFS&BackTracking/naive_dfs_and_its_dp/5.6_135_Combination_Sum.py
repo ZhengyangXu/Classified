@@ -27,6 +27,8 @@ Complexity
 ___________
 2^N
 """
+
+ 
 class Solution:
     # @param candidates, a list of integers
     # @param target, integer
@@ -34,25 +36,23 @@ class Solution:
 
     def combinationSum(self, candidates, target):
         # write your code here
-        result, branch = [], []
-        candidates = sorted(candidates)
-        self.dfs(0, candidates, target, result, branch)
+        result = []
+        candidates.sort()
+        self.dfs(0, result, [], 0, target, candidates)
         return result
 
-    def dfs(self, start, candidates, remain, res, branch):
-        # print branch,start,remain
-        if remain == 0:
-            res.append(branch[:])
+    def dfs(self, start, result, path, cur, target, A):
+        if cur == target:
+            result.append(path[:])
             return
-        for i in xrange(start, len(candidates)):
-            # This get rid of repeatitive results
-            if i > start and candidates[i] == candidates[i - 1]:
+        for i in xrange(start, len(A)):
+            if i != 0 and A[i] == A[i - 1]:
                 continue
-            if remain - candidates[i] >= 0:
+            if A[i] + cur <= target:
+                cur += A[i]
+                path.append(A[i])
 
-                remain = remain - candidates[i]
-                branch.append(candidates[i])
-                # print branch,i
-                self.dfs(i, candidates, remain, res, branch)
-                branch.pop()
-                remain += candidates[i]
+                self.dfs(i, result, path, cur, target, A)
+
+                path.pop()
+                cur -= A[i]

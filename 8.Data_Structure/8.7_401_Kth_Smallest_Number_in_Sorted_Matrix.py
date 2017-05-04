@@ -144,7 +144,7 @@ class Solution:
                     s.add((new_x, new_y))
                     heapq.heappush(minheap, T((new_x, new_y), matrix[new_x][new_y]))
 
-
+ 
 # Binary Search
 class Solution:
     # @param matrix: a matrix of integers

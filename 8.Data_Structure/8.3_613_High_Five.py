@@ -25,7 +25,7 @@ Time - O(NLog(5)) = O(N)
 Space - O(Lg(5))+O(N) = O(N)
 """
 
-
+ 
 class Solution:
     # @param {Record[]} results a list of <student_id, score>
     # @return {dict(id, average)} find the average of 5 highest scores for each person

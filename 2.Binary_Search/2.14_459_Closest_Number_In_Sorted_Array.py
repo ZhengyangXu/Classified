@@ -22,7 +22,7 @@ _________
 Lg(N)
 """
 
-
+ 
 class Solution:
     # @param {int[]} A an integer array sorted in ascending order
     # @param {int} target an integer

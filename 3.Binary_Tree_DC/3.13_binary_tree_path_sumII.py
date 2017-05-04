@@ -62,7 +62,7 @@ class Solution:
             return
         path += [node.val]
         tmp = target
-        size = len(path) - 1
+        size = len(path) - 1 
         for i in xrange(size, -1, -1):
             tmp -= path[i]
             if tmp == 0:

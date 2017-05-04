@@ -42,7 +42,7 @@ class Solution:
             return False
         if len(edges) != n - 1:
             return False
-
+ 
         graph = self.createGraph(n, edges)
         visited = set([])
         q = deque()

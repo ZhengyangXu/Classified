@@ -51,7 +51,7 @@ class Solution:
     @param k: As description
     @return: The index after partition
     """
-
+ 
     def partitionArray(self, nums, k):
         # write your code here
         # you should partition the nums by k

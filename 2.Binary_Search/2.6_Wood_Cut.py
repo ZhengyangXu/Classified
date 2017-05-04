@@ -32,7 +32,11 @@ Time - O(Nlg(k))
 Space - O(1)
 """
 
-
+def woordcut(nums):
+    start, end = 0, len(nums) - 1
+    while start + 1 < end:
+        mid = start + (end - start)/2
+        pieces = [i/mid for i in L]
 class Solution:
     """
     @param L: Given n pieces of wood with length L[i]

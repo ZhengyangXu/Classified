@@ -89,7 +89,7 @@ class Solution(object):
                 start = mid
         if '1' in [row[start] for row in image]:
             return start
-        return end
+        return end 
 
     def searchRight(self, image, start, end):
         while start + 1 < end:

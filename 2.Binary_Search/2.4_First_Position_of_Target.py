@@ -19,7 +19,7 @@ Space - O(1)
 """
 
 
-class Solution:
+class Solution: 
     # @param nums: The integer array
     # @param target: Target number to find
     # @return the first position of target in nums, position start from 0

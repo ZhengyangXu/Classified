@@ -19,7 +19,7 @@ nums[index] > nums[index-1]
 
 Complexity
 __________
-Lg(N)
+Lg(N) 
 """
 
 

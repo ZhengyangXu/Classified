@@ -18,7 +18,7 @@ Algorithm Inorder(tree)
 Uses of Inorder
 In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder itraversal s reversed, can be used.
 Example: Inorder traversal for the above given figure is 4 2 5 1 3.
-
+ 
 
 Preorder Traversal:
 

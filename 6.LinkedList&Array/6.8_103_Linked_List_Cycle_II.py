@@ -7,7 +7,7 @@ If there is no cycle, return null.
 Example
 _____________
 Given -21->10->4->5, tail connects to node index 1，return 10
- 
+  
 Approach
 _____________
 procedure

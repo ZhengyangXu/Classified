@@ -22,8 +22,9 @@ care
 
 Complexity
 ___________________
-Exponential 
+Exponential
 """
+
 
 
 class Solution:
@@ -48,7 +49,6 @@ class Solution:
                 branch.pop()
 
     def isPalindrome(self, s):
-        # since we donot want empty list, we treat length 2 strings as non-palindrome
         i, j = 0, len(s) - 1
         if len(s) > 1:
             while i < j:

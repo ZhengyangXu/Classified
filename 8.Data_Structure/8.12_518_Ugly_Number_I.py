@@ -18,7 +18,7 @@ Recursion
 CHeck Base - [2,3,5] (not including 1 since 1 will divide anything and not incur subproblem)
 
 Base Cases -  0 -> False; 1-> True
-
+ 
 Recursion
         for i in bases:
             if num % i == 0:

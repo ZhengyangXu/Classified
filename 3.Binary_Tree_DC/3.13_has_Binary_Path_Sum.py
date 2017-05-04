@@ -44,7 +44,7 @@ class Solution(object):
         :rtype: bool
         """
         path = []
-        return self.dc_traverse(root,  0, sum)
+        return self.dc_traverse(root, 0, sum)
 
     def dc_traverse(self, node, cur, target):
 

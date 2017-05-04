@@ -33,7 +33,7 @@ can potentially save some iterations)
 range: 0 - x
 """
 
-class Solution:
+class Solution: 
     """
     @param x: An integer
     @return: The sqrt of x

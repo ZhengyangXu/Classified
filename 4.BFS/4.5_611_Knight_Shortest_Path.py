@@ -49,7 +49,7 @@ class Solution:
         s_x, s_y = source.x, source.y
         d_x, d_y = destination.x, destination.y
         end = (d_x, d_y)
-        q.append((s_x, s_y))
+        q.append((s_x, s_y)) 
         steps = 0
         while q:
             size = len(q)

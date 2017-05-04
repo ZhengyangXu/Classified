@@ -19,7 +19,7 @@ Complexity
 __________________
 n = len(A)
 Time - O(Lg(N))
-Space - O(1)
+Space - O(1) 
 """
 
 

@@ -79,7 +79,7 @@ class Solution:
     # @param root: a TreeNode, the root of the binary tree
     # @return: nothing
 
-    def flatten(self, root):
+    def flatten(self, root): 
         # write your code here
         self.helper(root)
 

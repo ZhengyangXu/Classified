@@ -28,7 +28,7 @@ maintain - lowest, max
 one loop, update lowest, and update max = max(max, cur - lowest)
 since high must cover after low
 """
-
+ 
 
 class Solution(object):
 

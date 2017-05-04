@@ -80,7 +80,7 @@ class Solution:
                 if target >= A[mid] and target <= A[end]:
                     start = mid
                 else:
-                    end = mid
+                    end = mid 
             else:
                 if target >= A[start] and target <= A[mid]:
                     end = mid

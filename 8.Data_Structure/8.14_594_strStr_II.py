@@ -99,7 +99,7 @@ def Kmpstr(source, target):
             else:
                 j = lps[j-1]
     return -1
-
+ 
 class Solution:
     # @param {string} source a source string
     # @param {string} target a target string

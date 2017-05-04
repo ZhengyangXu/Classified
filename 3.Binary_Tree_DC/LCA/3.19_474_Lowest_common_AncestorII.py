@@ -12,7 +12,7 @@ class ParentTreeNode:
         self.val = val
         self.parent, self.left, self.right = None, None, None
 """
-
+ 
 
 class Solution:
     """

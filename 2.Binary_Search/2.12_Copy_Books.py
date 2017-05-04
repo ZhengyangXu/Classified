@@ -83,7 +83,7 @@ class Solution:
                     DP[k_i][p_i] = minimum
 
         return DP[k - 1][m - 1]
-
+ 
 #-----------------------------------------------------------------------
         # Binary Search
         # Constraint rquired requireCopiers <= k
